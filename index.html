@@ -37,23 +37,16 @@
     <!-- 1-The body class gives the whole thing the ligth gray background. 
      2-Navigation bar. Change this to hamgurgur menu and plan from mockups 
      3-In Pam's code her href text is Gourmet au Catering, when I add text it messes up the banner background-->
-    
-      <a href="home" class="w3-bar-item w3-button">
-             <div class="w3-left">
-          <a href="#home" class="w3-bar-item w3-button">Home</a>
-          <a href="#about" class="w3-bar-item w3-button">About</a>
-          <a href="#articles" class="w3-bar-item w3-button">Articles</a>
-          <a href="#shopping" class="w3-bar-item w3-button">Shopping</a>
-          <a href="#patterns" class="w3-bar-item w3-button">Patterns</a>
-          <a href="#community" class="w3-bar-item w3-button">Community</a>
-        </div>
-        <a
+            <a
           href="javascript:void(0)"
           class="w3-bar-item w3-button w3-left"
           onclick="w3_open()"
         >
          <i class="fa fa-bars"></i>
         </a>
+
+        </div>
+
         <!--I got the hamburger in, but isn't containing my menu-->
             <nav
       class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
@@ -84,10 +77,15 @@
       <a href="#community" onclick="w3_close()" class="w3-bar-item w3-button"
         >Community</a
       >
-    </nav>
+       </nav>
+      <a href="#" class="w3-bar-item w3-button w3-right"
+        ><i class="fa fa-shopping-cart"></i
+      ></a>
+      </nav>
       <a href="#" class="w3-bar-item w3-button w3-right"
         ><i class="fa fa-search"></i
       ></a>
+     
     </div>
 
     <!-- w3-content defines a container for fixed size centered content, 
@@ -95,24 +93,18 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-content" style="max-width: 1600px">
       <!-- Header, figure out padding and maybe how to get logo on this instead of text-->
       <header class="w3-container w3-center">
-        <h1 class="w3-xxxlarge"><b>Brochet & Friends</b></h1>
-        <h6>Bro+Crochet= <span class="w3-tag">Brochet</span></h6>
       </header>
 
       <!-- Image header -->
       <header class="w3-display-container w3-wide" id="home">
         <img
           class="w3-image"
-          src="images/pexels-photograph-15939813.jpg"
+          src="images/Brochet and Friends home page pic with logos and image.jpg"
           alt="Fashion Blog"
           width="1600"
           height="1060"
         />
         <div class="w3-display-left w3-padding-large">
-          <h1 class="w3-text-white">For Bro's and Hookers</h1>
-          <h1 class="w3-jumbo w3-text-white w3-hide-small">
-            <b>& ALL YARN LOVERS</b>
-          </h1>
           <h6>
             <button
               class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
@@ -691,6 +683,24 @@ and is wrapped around the whole page content, except for the footer in this exam
         ><i class="fa fa-twitter"></i
       ></a>
     </footer>
+
+        <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
 
     <script>
       // Toggle between hiding and showing blog replies/comments
