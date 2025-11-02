@@ -2,7 +2,7 @@
 <html>
   <!--Do I add Inter fontface, or just work with fonts in this doc already?-->
   <head>
-    <title>Brochet & Friends</title>
+    <title>Community</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -58,11 +58,11 @@
       <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
         >Home</a
       >
-      <a href="#articles" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Articles</a
-      >
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
         >About</a
+      >
+      <a href="#articles" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
+        >Articles</a
       >
       <a href="#shopping" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
         >Shopping</a
@@ -77,14 +77,15 @@
       <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large"
         ><i class="fa fa-search"></i
       ></a>
-      <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large"
+      <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large "
         ><i class="fa fa-shopping-cart"></i
       ></a>    
+ 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
     
     <div class="w3-content" style="max-width: 1600px">
-      <!-- Header, figure out padding and maybe change logo to google font or just the brochet font-->
+      <!-- Header, figure out padding and maybe how to get logo on this instead of text-->
       <header class="w3-container w3-center">
       </header>
 
@@ -111,12 +112,12 @@ and is wrapped around the whole page content, except for the footer in this exam
 
       <!-- Grid -->
       <div class="w3-row w3-padding w3-border">
-        <!-- Blog entries. l8 is large and 8 is small (so 2/3 of the coumns on a page)below -->
+        <!-- Blog entries. l8 is large and 8 (so 2/3 of the coumns on a page)below -->
         <div class="w3-col l8 s12">
           <!-- Articles -->
-          <div class="w3-container w3-white w3-margin w3-padding-large"  id="articles">
+          <div class="w3-container w3-white w3-margin w3-padding-large">
             <div class="w3-center">
-              <h1 class="w3-center">Articles</h1>
+              <h1>Articles</h1>
               <h2>
                 Hooking and Yarn News, <span class="w3-opacity">January 1st, 2026</span>
               </h2>
@@ -128,7 +129,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <img src="images/pexels-pietro-henricky-1289770821-30723814 (1).jpg"
                 style="max-width: 375px; float: right; padding-left: 20px;
 
-                <!-- cant figure out why I can't delete this, or what is going on -->
+               
                 <a href="https://www.pexels.com/photo/28508094/" target="_blank"></a> 
                 
                 <h4>Crochet In Photography</h4>
@@ -159,8 +160,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                 nostrud exercitation ullamco. 
                 nostrud exercitation ullamco. 
               </p>
-              <div>
-                <div class="w3-col l10 m9">  
+             
+              <div
+                
+              >
+                
+                <div class="w3-col l10 m9">
+                  
+                  
                 </div>
               </div>
             </div>
@@ -168,7 +175,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <hr />
 
           <!-- About Page -->
-          <div class="w3-container w3-white w3-margin w3-padding-large" id="about">
+          <div class="w3-container w3-white w3-margin w3-padding-large">
             <div class="w3-center">
               <h1>About Brochet & Friends</h1>
               <h5>
@@ -264,20 +271,57 @@ and is wrapped around the whole page content, except for the footer in this exam
                   To crochet bomb, all you need is yarn and a location. You can yarn bomb your mailbox, or the pole for a street sigh, or even an entire bus!
                 </p>
               </div>
-                                            <div class="w3-col l10 m9">  
-                </div>
             </div>
               </div>
-              </div>
-          </div>
-          <hr /> 
 
-          <!-- Shopping. Why can't I get the box to break here?-->
-          <div class="w3-container w3-white w3-margin w3-padding-large" id="shopping">
+
+              
+              <!-- Example of comment field -->
+              <div id="demo2" style="display: none">
+                <div class="w3-row">
+                  <hr />
+                  <div class="w3-col l2 m3">
+                    <img src="/w3images/girl_train.jpg" style="width: 90px" />
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>
+                      Amber
+                      <span class="w3-opacity w3-medium"
+                        >April 26, 2015, 10:52 PM</span
+                      >
+                    </h4>
+                    <p>
+                      Love your blog page! Simply the best! Lorem ipsum dolor
+                      sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <br />
+                  </div>
+                </div>
+                <div class="w3-row w3-margin-bottom">
+                  <div class="w3-col l2 m3">
+                    <img src="/w3images/girl.jpg" style="width: 90px" />
+                  </div>
+                  <div class="w3-col l10 m9">
+                    <h4>
+                      Angie
+                      <span class="w3-opacity w3-medium"
+                        >April 23, 2015, 9:12 PM</span
+                      >
+                    </h4>
+                    <p>Love hats!!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog entry -->
+          <div class="w3-container w3-white w3-margin w3-padding-large">
             <div class="w3-center">
-              <h1 class="w3-center">Shopping</h1>
+              <h3>Shopping</h3>
               <h5>
-                Crochet to Purchase<span class="w3-opacity">January 1st, 2026</span>
+                Title description, <span class="w3-opacity">April 7, 2016</span>
               </h5>
             </div>
 
@@ -301,6 +345,24 @@ and is wrapped around the whole page content, except for the footer in this exam
                 Sed vitae justo condimentum, porta lectus vitae, ultricies
                 congue gravida diam non fringilla.
               </p>
+              <p class="w3-left">
+                <button
+                  class="w3-button w3-white w3-border"
+                  onclick="likeFunction(this)"
+                >
+                  <b><i class="fa fa-thumbs-up"></i> Like</b>
+                </button>
+              </p>
+              <p class="w3-right">
+                <button
+                  class="w3-button w3-black"
+                  onclick="myFunction('demo3')"
+                >
+                  <b>Replies  </b> <span class="w3-tag w3-white">3</span>
+                </button>
+              </p>
+              <p class="w3-clear"></p>
+
               <!-- Example of comment field -->
 
                 <hr />
@@ -341,7 +403,7 @@ and is wrapped around the whole page content, except for the footer in this exam
               class="w3-grayscale"
             />
             <div class="w3-container w3-black">
-              <h4>Patterns 1</h4>
+              <h4>My Name</h4>
               <p>
                 Just me, myself and I, exploring the universe of uknownment. I
                 have a heart of love and a interest of lorem ipsum and mauris
@@ -351,10 +413,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
           <hr />
 
-          <!-- Patterns 2 -->
+          <!-- Posts -->
           <div class="w3-white w3-margin">
             <div class="w3-container w3-padding w3-black">
-              <h4> Patterns 2</h4>
+              <h4>Popular Posts</h4>
             </div>
             <ul class="w3-ul w3-hoverable w3-white">
               <li class="w3-padding-16">
@@ -405,10 +467,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
           <hr />
 
-          <!-- Community -->
+          <!-- Advertising -->
           <div class="w3-white w3-margin">
             <div class="w3-container w3-padding w3-black">
-              <h4>Community 1</h4>
+              <h4>Advertise</h4>
             </div>
             <div class="w3-container w3-white">
               <div
@@ -421,10 +483,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
           <hr />
 
-          <!-- Community 2 -->
+          <!-- Tags -->
           <div class="w3-white w3-margin">
             <div class="w3-container w3-padding w3-black">
-              <h4>Community 2</h4>
+              <h4>Tags</h4>
             </div>
             <div class="w3-container w3-white">
               <p>
@@ -473,10 +535,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
           <hr />
 
-          <!-- Shopping side preview with additional content -->
+          <!-- Inspiration -->
           <div class="w3-white w3-margin">
             <div class="w3-container w3-padding w3-black">
-              <h4>Shopping 2</h4>
+              <h4>Inspiration</h4>
             </div>
             <div class="w3-row-padding w3-white">
               <div class="w3-col s6">
