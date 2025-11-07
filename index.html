@@ -6,6 +6,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table -->
+
     <link rel="stylesheet" href="./css/w3.css"/>
     <link
       rel="stylesheet"
@@ -48,7 +60,7 @@
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
   <body class="w3-light-grey">
-    <!-- 1-The body class gives the whole thing the ligth gray background-->
+    <!-- 1-The body class gives the whole thing the light gray background-->
     <a
     href="javascript:void(0)"
     class="w3-bar-item w3-button w3-left"
@@ -176,7 +188,7 @@
           <h4>Patterns in Review, Fall Themed Suit</h4>
           <h2>Not Your Average Granny Square</h2>
           <h4>Lena Skvagerson</h4> 
-          The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.           The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
+          The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.   The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. The Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
         </p>
 
         <!-- 4th article, Yarn Bombing --> 
@@ -330,18 +342,109 @@
         <div class="w3-center">
           <h1 class="w3-center">Patterns</h1>
           <h2>
-            Hooking and Yarn News, <span class="w3-opacity">January 1st, 2026</span>
+            Patterns in a Sortable Table, <span class="w3-opacity">with pictures</span>
           </h2>
         </div>
         <div class="w3-justify">      
           <p>                
-            <h4>Patterns</h4>
             <h2>PatternsPatternsPatternsPatternsPatterns</h2>
-            <h4>PatternsPatternsPatterns</h4> 
-            Patterns Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
           </p>
+          
+
+          <!-- Patterns Table -->
+          <!-- Added Table, but sorting doesn't work and my /div's still need more debugging -->
+
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr class="w3-deep-purple">
+                <th>Picture</th>
+                <th>Description</th>
+                <th>Materials</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-asphalt">
+              <td><img src="./images/IMG_6794.jpg" style="width: 120px" /></td>
+              <td>Pink Bird</td>
+              <td><ul>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                </ul>
+              </td>
+              <td>Beginner</td>
+            </tr>
+
+            <tr class="w3-hover-asphalt">
+              <td><img src="./images/IMG_6797.jpg" style="width: 120px" /></td>
+              <td>Turkey</td>
+              <td><ul>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                </ul>
+              </td>
+              <td>Advanced</td>
+            </tr>
+            
+            <tr class="w3-hover-asphalt">
+              <td><img src="./images/IMG_6787.jpg" style="width: 120px" /></td>
+              <td>Bunnies</td>
+              <td><ul>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                </ul>
+              </td>
+              <td>Intermediate</td>
+            </tr>
+
+            <tr class="w3-hover-asphalt">
+              <td><img src="./images/IMG_6803.jpg" style="width: 120px" /></td>
+              <td>Spiders</td>
+              <td><ul>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                <li>Material</li>
+                </ul>
+              </td>
+              <td>Beginner</td>
+            </tr>
+
+            <tr class="w3-hover-asphalt">
+              <td><img src="./images/IMG_6799.jpg" style="width: 120px" /></td>
+              <td>Chick</td>
+              <td>
+                <ul>
+                  <li>Material</li>
+                  <li>Material</li>
+                  <li>Material</li>
+                  <li>Material</li>
+                  <li>Material</li>
+                  <li>Material</li>
+                </ul>
+              </td>
+              <td>Intermediate</td>
+            </tr>
+
+          </table>
+            <p> 
+              Patterns Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
+            </p>
+          </div>
         </div>
-      </div>
 
       <!-- Community -->
       <div class="w3-container w3-white w3-margin w3-padding-large"  id="community">
@@ -871,6 +974,18 @@
       }
       // accordion end
       // carousel slideshow end
+
+            // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
     </script>
   </body>
 </html>
