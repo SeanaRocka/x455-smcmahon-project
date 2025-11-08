@@ -6,18 +6,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- begin: add jquery script links to support for sortable table -->
-    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
-    <script
-      type="text/JavaScript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/JavaScript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
-    ></script>
-    <!-- end: add jquery script links to support for sortable table -->
-
     <link rel="stylesheet" href="./css/w3.css"/>
     <link
       rel="stylesheet"
@@ -31,6 +19,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table -->
+
     <style>
       h1,
       h2,
@@ -222,7 +223,7 @@
 
       <!-- About Page --> 
 
-      <div class="w3-container w3-white w3-margin w3-padding-small" id="about">
+      <div class="w3-container w3-white w3-margin" id="about">
         <div class="w3-center">
           <h1>About Brochet & Friends</h1>
           <h5>We are A Magazine for Bro’s, Hookers & Yarn Lovers!</h5>
@@ -232,82 +233,99 @@
           This issue is the culmination of a great deal of hooking and organizing. Our mission is to bring love and peace to the world through yarn. We love you, we love crochet, we love Bros who crochet and anyone who loves yarn. 
         </p>
 
-        <div class="w3-col m4 w3-center">
-          <iframe 
-            height="210" src="https://www.youtube.com/embed/rf2PyvttJnA?si=JoDKzBhvN-0_Chx5" title="Crocheting on the train" frameborder="0" allow="autoplay;">
-          </iframe>
-        </div>
-
-        <!-- Begin 1st Accordion. -->
-
-        <div class="w3-col m4 w3-center" style="padding-right: 7px">
-          <button onclick="myAccordion('accordion1')"
-            class="w3-button w3-block w3-deep-purple w3-center-align"
-            id="accordionBtn1">
-      
-            <h4>Crocheting in Public <i class="fa fa-caret-down"></i></h4>
-          </button>
-          <div
-            id="accordion1"
-            class="w3-hide w3-container"
-            style="height: 260px"
-            >
-            <p>
-            While crocheting out in the world is fun, it is important to be prepared. Have all of your supplies, and also to pay attention to your own safety. Some people may think that you are knitting, but they are ignorant to the art of Crochet!!
-            </p>
-          </div>
-        </div>
-
         <!-- Begin youtube About Content-->
-        <div class="w3-col m4 w3-center">
-          <iframe height="210" src="https://www.youtube.com/embed/ErwOgdK57I4?si=Pd1Dqsa26fu6JIUj" 
-            title="Crochet Poncho" 
-            frameborder="0" allow="autoplay;">
-          </iframe>             
-        </div>
+        <div class="w3-padding-large">
+          <div class="w3-row">
+            <div class="w3-col m2 w3-center">
+              <iframe 
+                width="210" 
+                src="https://www.youtube.com/embed/rf2PyvttJnA?si=JoDKzBhvN-0_Chx5" 
+                title="Crocheting on the train" 
+                frameborder="0" 
+                allow="autoplay;">
+              </iframe>
+            </div>
 
-        <!-- Begin 2nd Accordion -->
+            <!-- 2nd youtube About Content-->
+            <div class="w3-col m2 w3-center">
+              <iframe width="210" 
+              src="https://www.youtube.com/embed/ErwOgdK57I4?si=Pd1Dqsa26fu6JIUj" 
+              title="Crochet Poncho" 
+              frameborder="0" 
+              allow="autoplay;">
+              </iframe>             
+            </div>
 
-        <div class="w3-col m4 w3-center" style="padding-right: 7px">
-          <button onclick="myAccordion('accordion2')"
-            class="w3-button w3-block w3-deep-purple w3-center-align"
-            id="accordionBtn1">
-            <h4>Crochet Poncho <i class="fa fa-caret-down"></i></h4>
-          </button>
-          <div
-            id="accordion2"
-            class="w3-hide w3-container"
-            style="height: 260px"
-            >
-            <p>
-              There are many easy crochet projects! Pick something like this poncho, or a scarf and get started on your first crochet project.
-            </p>
-          </div>
-        </div>
+            <!-- Begin 3rd youtube -->
 
-        <!-- Begin 3rd youtube -->
+            <div class="w3-col m2 w3-center">
+              <iframe width="210" 
+              src="https://www.youtube.com/embed/NFDmsNCGcvc?si=5TrFLZuK4mTf-xp7" 
+              title="Yarn Bombing" 
+              frameborder="0" 
+              allow="autoplay;">
+              </iframe>  
+            </div>
+          </div> 
 
-        <div class="w3-col m4 w3-center">
-          <iframe height="210" src="https://www.youtube.com/embed/NFDmsNCGcvc?si=5TrFLZuK4mTf-xp7" title="Yarn Bombing" frameborder="0" allow="autoplay;"></iframe>  
-        </div>
+          <!-- Begin 1st Accordion. -->
+          <div class="w3-row">
+            <div class="w3-col m2 w3-left" style="padding right: 3px">  
+              <button onclick="myAccordion('accordion1')"
+                class="w3-button w3-block w3-deep-purple w3-center-align"
+                id="accordionBtn1">
+                <h4>Crocheting in Public <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion1"
+                class="w3-hide w3-container"
+                style="height: 260px"
+                >
+                <p>
+                While crocheting out in the world is fun, it is important to be prepared. Have all of your supplies, and also to pay attention to your own safety. Some people may think that you are knitting, but they are ignorant to the art of Crochet!!
+                </p>
+              </div>
+            </div>
 
-        <!-- Begin 3rd Accordion -->
-        
-        <div class="w3-col m4 w3-center" style="padding-right: 7px">
-          <button
-            onclick="myAccordion('accordion3')"
-            class="w3-button w3-block w3-deep-purple w3-center-align"
-            id="accordionBtn1">
-            <h4>Yarn Bombing <i class="fa fa-caret-down"></i></h4>
-          </button>
+            <!-- Begin 2nd Accordion, Looking at why this area doesn't work, the spacing.  -->
 
-          <div
-            id="accordion3"
-            class="w3-hide w3-container"
-            style="height: 260px">
-            <p>
-              To crochet bomb, all you need is yarn and a location. You can yarn bomb your mailbox, or the pole for a street sigh, or even an entire bus!
-            </p>
+            <div class="w3-col m2 w3-left">
+              <button onclick="myAccordion('accordion2')"
+                class="w3-button w3-block w3-deep-purple w3-center-align"
+                id="accordionBtn2">
+                <h4>Crochet Poncho <i class="fa fa-caret-down"></i></h4>
+              </button>
+              <div
+                id="accordion2"
+                class="w3-hide w3-container"
+                style="height: 260px"
+                >
+                <p>
+                  There are many easy crochet projects! Pick something like this poncho, or a scarf and get started on your first crochet project.
+                </p>
+              </div>
+            </div>
+
+
+            <!-- Begin 3rd Accordion -->
+          
+            <div class="w3-col m2 w3-left">
+              <button
+                onclick="myAccordion('accordion3')"
+                class="w3-button w3-block w3-deep-purple w3-center-align"
+                id="accordionBtn3">
+                <h4>Yarn Bombing <i class="fa fa-caret-down"></i></h4>
+              </button>
+
+              <div
+                id="accordion3"
+                class="w3-hide w3-container"
+                style="height: 260px">
+                <p>
+                  To crochet bomb, all you need is yarn and a location. You can yarn bomb your mailbox, or the pole for a street sigh, or even an entire bus!
+                </p>
+              </div>  
+            </div>
           </div>
         </div>
       </div>
@@ -337,11 +355,8 @@
             Patterns in a Sortable Table, <span class="w3-opacity">with pictures</span>
           </h2>
         </div>     
-        <p>                
-          <h2>PatternsPatternsPatternsPatternsPatterns</h2>
-        </p>
         
-          <!-- Patterns Table -->
+        <!-- Patterns Table -->
 
         <table id="myTable" class="w3-table-all">
           <thead>
@@ -370,7 +385,8 @@
           <tr class="w3-hover-asphalt">
             <td><img src="./images/IMG_6797.jpg" style="width: 120px" /></td>
             <td>Turkey</td>
-            <td><ul>
+            <td>
+              <ul>
               <li>Material</li>
               <li>Material</li>
               <li>Material</li>
@@ -385,7 +401,8 @@
           <tr class="w3-hover-asphalt">
             <td><img src="./images/IMG_6787.jpg" style="width: 120px" /></td>
             <td>Bunnies</td>
-            <td><ul>
+            <td>
+              <ul>
               <li>Material</li>
               <li>Material</li>
               <li>Material</li>
@@ -400,7 +417,8 @@
           <tr class="w3-hover-asphalt">
             <td><img src="./images/IMG_6803.jpg" style="width: 120px" /></td>
             <td>Spiders</td>
-            <td><ul>
+            <td>
+              <ul>
               <li>Material</li>
               <li>Material</li>
               <li>Material</li>
@@ -427,14 +445,11 @@
             </td>
             <td>Intermediate</td>
           </tr>
-
         </table>
         <p> 
             Patterns Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
         </p>
       </div>
-      <hr />
-
       <!-- Community -->
       <div class="w3-container w3-white w3-margin w3-padding-large"  id="community">
         <div class="w3-center">
@@ -507,7 +522,6 @@
             </div>
             <div class="my-scrolling" style="padding-right: 10px">
               <p>
-
                 Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
               </p>
             </div>
@@ -542,8 +556,7 @@
             <div style="
               margin-left: -16px; 
               margin-right: -16px;
-              margin-top: -18px;
-              " 
+              margin-top: -18px;" 
               class="w3-light-grey w3-center"
               >
               <h1>Community 3</h1>
@@ -864,10 +877,9 @@
         >Accessibility</a>
     </footer>
 
-        <script>
-      // Toggle between showing and hiding the sidebar when clicking the menu icon
+    <script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
       var mySidebar = document.getElementById("mySidebar");
-
       function w3_open() {
         if (mySidebar.style.display === "block") {
           mySidebar.style.display = "none";
@@ -899,7 +911,7 @@
         x.innerHTML = "✓ Liked";
       }
 
- // carousel slideshow begin
+      // carousel slideshow begin
       var myIndex = 0;
       carousel();
       function carousel() {
@@ -942,8 +954,8 @@
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-opacity-off";
       }
-
-            // accordion begin
+      // carousel slideshow end
+      // accordion begin
       function myAccordion(id) {
         var x = document.getElementById(id);
         // if the accordion text is hidden, show it and change the button color to orange
@@ -959,14 +971,14 @@
         }
       }
       // accordion end
-      // carousel slideshow end
 
-            // sortable table begin
+      // sortable table begin
       $(document).ready(function () {
         $("table#myTable").tablesorter({
           sortList: [
             [2, 1],
-          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          ] 
+          /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
           CssAsc: "tablesorter-headerAsc",
           CssDesc: "tablesorter-headerDesc",
         });
