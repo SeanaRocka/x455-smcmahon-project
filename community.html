@@ -2,7 +2,7 @@
 <html>
   <!--Do I add Inter fontface, or just work with fonts in this doc already?-->
   <head>
-    <title>Community</title>
+    <title>Brochet & Friends</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -19,6 +19,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- begin: add jquery script links to support for sortable table -->
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <!-- end: add jquery script links to support for sortable table -->
+
     <style>
       h1,
       h2,
@@ -31,606 +44,256 @@
       body {
         font-family: "Open Sans";
       }
+
+      .my-scrolling{
+        height: 300px;
+        overflow: auto;       
+      }
+
+      /* accordion button hover */
+      #accordionBtn1:hover,
+      #accordionBtn2:hover {
+        background-color: blanchedalmond !important;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+      }
+
+      /* adding box from book page 150 for about section youtubes */
+
+      .box {
+        float: left;
+        width: 50%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border: 0px solid #fff;
+      }
+
+      .box2 {
+        float: left;
+        width: 33%;
+        padding: 10px;
+        border: 0px solid #fff;
+      }
+
+      .grid::after {
+          content: "";
+          clear: both;
+          display: table;
+      }
+
+      .box, .grid, .grid::after { box-sizing: border-box; }
+
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
   <body class="w3-light-grey">
-    <!-- 1-The body class gives the whole thing the ligth gray background-->
-            <a
-          href="javascript:void(0)"
-          class="w3-bar-item w3-button w3-left"
-          onclick="w3_open()"
-        >
-         <i class="fa fa-bars w3-padding w3-text-deep-purple w3-large"></i>
-        </a>
-        </div>
-            <nav
-      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
-      style="display: none"
-      id="mySidebar"
+    <!-- 1-The body class gives the whole thing the light gray background-->
+    <a
+    href="javascript:void(0)"
+    class="w3-bar-item w3-button w3-left"
+    onclick="w3_open()"
     >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-bar-item w3-button w3-large w3-padding-16"
-        >Close &times;</a
-      >
-      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Home</a
-      >
-      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >About</a
-      >
-      <a href="#articles" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Articles</a
-      >
-      <a href="#shopping" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Shopping</a
-      >
-      <a href="#patterns" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Patterns</a
-      >
-      <a href="#community" onclick="w3_close()" class="w3-bar-item w3-button w3-large"
-        >Community</a
-      >
-      </nav>
-      <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large"
-        ><i class="fa fa-search"></i
-      ></a>
-      <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large "
-        ><i class="fa fa-shopping-cart"></i
-      ></a>    
- 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-    
-    <div class="w3-content" style="max-width: 1600px">
-      <!-- Header, figure out padding and maybe how to get logo on this instead of text-->
-      <header class="w3-container w3-center">
-      </header>
-
-      <!-- Image header -->
-      <header class="w3-display-container w3-wide" id="home">
-        <img
-          class="w3-image"
-          src="images/Brochet and Friends home page pic with logos and image.jpg"
-          alt="Fashion Blog"
-          width="1600"
-          height="1060"
-        />
-        <div class="w3-display-left w3-padding-large">
-          <h6>
-            <button
-              class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
-              onclick="document.getElementById('subscribe').style.display='block'"
-            >
-              SUBSCRIBE
-            </button>
-          </h6>
-        </div>
-      </header>
-
-      <!-- Grid -->
-      <div class="w3-row w3-padding w3-border">
-        <!-- Blog entries. l8 is large and 8 (so 2/3 of the coumns on a page)below -->
-        <div class="w3-col l8 s12">
-          <!-- Articles -->
-          <div class="w3-container w3-white w3-margin w3-padding-large">
-            <div class="w3-center">
-              <h1>Articles</h1>
-              <h2>
-                Hooking and Yarn News, <span class="w3-opacity">January 1st, 2026</span>
-              </h2>
-            </div>
-
-            <div class="w3-justify">
-             
-              <p>
-                <img src="images/pexels-pietro-henricky-1289770821-30723814 (1).jpg"
-                style="max-width: 375px; float: right; padding-left: 20px;
-
-               
-                <a href="https://www.pexels.com/photo/28508094/" target="_blank"></a> 
-                
-                <h4>Crochet In Photography</h4>
-                <h2>A review of the crochet phtopraphy from Pietro Henricky</h2>
-                
-                <h4>Riego de la Branchardière</h4> 
-                The photography of 
-<a href="https://www.pexels.com/photo/28508094/" target="_blank">Pietro Henricky</a> 
-                  
-                is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
-              </p>
-              <p>
-                <img src="images/tom-daley-knit-featured.jpg"
-              style="max-width: 375px; float: left; padding-right: 20px;
-              >
-
-                <a href="https://en.wikipedia.org/wiki/Tom_Daley" target="_blank"></a> 
-                                 <h4>Celebrity Crochet</h4>
-                <h2>Tom Daley, Olympian and crocheter</h2>
-                <h4>Sean McMahon</h4> 
-                                <a href="https://en.wikipedia.org/wiki/Tom_Daley" target="_blank">Tom Daley</a>
-                Sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco. 
-                nostrud exercitation ullamco. 
-              </p>
-             
-              <div
-                
-              >
-                
-                <div class="w3-col l10 m9">
-                  
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <!-- About Page -->
-          <div class="w3-container w3-white w3-margin w3-padding-large">
-            <div class="w3-center">
-              <h1>About Brochet & Friends</h1>
-              <h5>
-                We are A Magazine for Bro’s, Hookers & Yarn Lovers!
-               
-              </h5>
-            </div>
-
-              <p>
-                This Magazine is for anyone who uses a crochet hook (i.e. A Hooker.) We are yarn enthusiasts, Bros and people who love to challenge stereotypes and get crafty. We are for Crochet Lovers and Knitting enthusiasts. We also love colors and RAINBOWS, fashion, glyphys and polka dots! This Magazine is for all lovers of yarn and fun.
-                This issue is the culmination of a great deal of hooking and organizing. Our mission is to bring love and peace to the world through yarn. We love you, we love crochet, we love Bros who crochet and anyone who loves yarn. 
-              </p>
-
-
-               <div class="w3-row">
-              <div class="w3-col m4 w3-left">
-               <iframe width="374" height="210" src="https://www.youtube.com/embed/rf2PyvttJnA?si=JoDKzBhvN-0_Chx5" title="Crocheting on the train" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </iframe>
-            </div>
-
-          <div class="w3-row">
-            <div class="w3-col s6 w3-left" style="padding-right: 147px">
-
-              <button
-                onclick="myAccordion('accordion1')"
-                class="w3-button w3-block w3-deep-purple w3-center-align"
-                id="accordionBtn1">
-              
-                <h4> Crocheting in Public <i class="fa fa-caret-down"></i></h4>
-              </button>
-
-              <div
-                id="accordion1"
-                class="w3-hide w3-container"
-                style="height: 260px"
-              >
-                <p>
-                  While crocheting out in the world is fun, it is important to be prepared. Have all of your supplies, and also to pay attention to your own safety. Some people may think that you are knitting, but they are ignorant to the art of Crochet!!
-                </p>
-              </div>
-            </div>
-
- 
-            <div class="w3-col m4 w3-right" style="padding-right: 147 px"></div>
-            <iframe width="374" height="210" src="https://www.youtube.com/embed/ErwOgdK57I4?si=Pd1Dqsa26fu6JIUj" title="Crochet Poncho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>             </div>
-
-                      <div class="w3-row">
-            <div class="w3-col s6 w3-right" style="padding-left: 100  px">
-
-              <button
-                onclick="myAccordion('accordion1')"
-                class="w3-button w3-block w3-deep-purple w3-center-align"
-                id="accordionBtn1">
-              
-                <h4>Crochet Poncho <i class="fa fa-caret-down"></i></h4>
-              </button>
-
-              <div
-                id="accordion1"
-                class="w3-hide w3-container"
-                style="height: 260px"
-              >
-                <p>
-                  There are many easy crochet projects! Pick something like this poncho, or a scarf and get started on your first crochet project.
-                </p>
-              </div>
-            </div>
-
- </div>
-               <div class="w3-row">
-            <div class="w3-col m4 w3-left">
-            <iframe width="374" height="210" src="https://www.youtube.com/embed/NFDmsNCGcvc?si=5TrFLZuK4mTf-xp7" title="Yarn Bombing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
-
-
+    <i class="fa fa-bars w3-padding w3-text-deep-purple w3-large"></i>
+    </a>
+  </div>
             
-          <div class="w3-row">
-            <div class="w3-col s6 w3-left" style="padding-right: 147px">
+  <nav
+    class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
+    style="display: none"
+    id="mySidebar"
+    >
+    <a
+    href="javascript:void(0)"
+    onclick="w3_close()"
+    class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
 
-              <button
-                onclick="myAccordion('accordion1')"
-                class="w3-button w3-block w3-deep-purple w3-center-align"
-                id="accordionBtn1">
-              
-                <h4>Yarn Bombing <i class="fa fa-caret-down"></i></h4>
-              </button>
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Home</a
+    >
+    <a href="./articles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Articles</a
+    >
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">About</a
+    >
+    <a href="./shopping.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Shopping</a
+    >
+    <a href="./patterns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Patterns</a
+    >
+    <a href="#community" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Community</a
+    >
+  </nav>
 
-              <div
-                id="accordion1"
-                class="w3-hide w3-container"
-                style="height: 260px"
-              >
-                <p>
-                  To crochet bomb, all you need is yarn and a location. You can yarn bomb your mailbox, or the pole for a street sigh, or even an entire bus!
-                </p>
-              </div>
-            </div>
-              </div>
+  <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large"><i class="fa fa-search"></i></a>
+      
+  <a href="#" class="w3-bar-item w3-right w3-padding w3-text-deep-purple w3-large"
+  ><i class="fa fa-shopping-cart"></i
+  ></a>   
 
+<!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
+    
+  <div class="w3-content" style="max-width: 1600px">
 
-              
-              <!-- Example of comment field -->
-              <div id="demo2" style="display: none">
-                <div class="w3-row">
-                  <hr />
-                  <div class="w3-col l2 m3">
-                    <img src="/w3images/girl_train.jpg" style="width: 90px" />
-                  </div>
-                  <div class="w3-col l10 m9">
-                    <h4>
-                      Amber
-                      <span class="w3-opacity w3-medium"
-                        >April 26, 2015, 10:52 PM</span
-                      >
-                    </h4>
-                    <p>
-                      Love your blog page! Simply the best! Lorem ipsum dolor
-                      sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <br />
-                  </div>
-                </div>
-                <div class="w3-row w3-margin-bottom">
-                  <div class="w3-col l2 m3">
-                    <img src="/w3images/girl.jpg" style="width: 90px" />
-                  </div>
-                  <div class="w3-col l10 m9">
-                    <h4>
-                      Angie
-                      <span class="w3-opacity w3-medium"
-                        >April 23, 2015, 9:12 PM</span
-                      >
-                    </h4>
-                    <p>Love hats!!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Header, figure out padding and maybe change logo to google font or just the brochet font-->
 
-          <!-- Blog entry -->
-          <div class="w3-container w3-white w3-margin w3-padding-large">
+    <header class="w3-container w3-center"></header>
+
+    <!-- Image header -->
+    <header class="w3-display-container w3-wide" id="home">
+      <img
+      class="w3-image"
+      src="images/Brochet and Friends home page pic with logos and image.jpg"
+      alt="Fashion Blog"
+      width="1600"
+      height="1060"
+      />
+      <div class="w3-display-left w3-padding-large">
+        <h6>
+          <button
+          class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
+          onclick="document.getElementById('subscribe').style.display='block'"
+          >
+          SUBSCRIBE
+          </button>
+        </h6>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding w3-border">
+      <!-- Figure out how to place things to center and right in this grid -->
+      <div class="w3-col l12">
+        
+        <!-- Community Page-->
+
+        <div class="w3-container w3-white w3-row" id="community">
+          <div class="w3-padding-large">
+            <h1 class="w3-center">Community</h1>
+
+            <!-- carousel slideshow begin -->
+
             <div class="w3-center">
-              <h3>Shopping</h3>
-              <h5>
-                Title description, <span class="w3-opacity">April 7, 2016</span>
-              </h5>
-            </div>
+              
+              <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 100%" />
 
-            <div class="w3-justify">
-              <img
-                src="/w3images/runway.jpg"
-                alt="Runway"
-                style="width: 100%"
-                class="w3-padding-16"
+              <img 
+                class="mySlides" 
+                src="/images/pexels-photo-8781451.jpeg.jpg" 
+                style="width: 100%; display: none" 
               />
-              <p>
-                <strong>Dont miss!</strong> The runway in New York City this
-                weekend is gonna be legendary!
-              </p>
-              <p>
-                Some text about this blog entry. Fashion fashion and mauris
-                neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed
-                mattis nunc id lorem euismod placerat. Vivamus porttitor magna
-                enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi
-                non congue ullam corper. Praesent tincidunt sedtellus ut rutrum.
-                Sed vitae justo condimentum, porta lectus vitae, ultricies
-                congue gravida diam non fringilla.
-              </p>
-              <p class="w3-left">
-                <button
-                  class="w3-button w3-white w3-border"
-                  onclick="likeFunction(this)"
-                >
-                  <b><i class="fa fa-thumbs-up"></i> Like</b>
-                </button>
-              </p>
-              <p class="w3-right">
-                <button
-                  class="w3-button w3-black"
-                  onclick="myFunction('demo3')"
-                >
-                  <b>Replies  </b> <span class="w3-tag w3-white">3</span>
-                </button>
-              </p>
-              <p class="w3-clear"></p>
 
-              <!-- Example of comment field -->
+              <img 
+                class="mySlides" 
+                src="/images/pexels-photo-10664874.jpeg.jpg" 
+                style="width: 100%; display: none" 
+              />
 
-                <hr />
-                <div class="w3-row w3-margin-bottom">
-                  <div class="w3-col l2 m3">
-                    
+              <img 
+                class="mySlides" 
+                src="/images/pexels-photo-24302220.jpeg.jpg"
+                style="width: 100%; display: none" 
+              />
+            </div>
+            <br />
+
+            <!-- carousel slideshow end -->
+
+            <!-- carousel thumbnail begin-->
+
+            <div class="w3-col l12">
+
+              <img 
+              class="demo w3-opacity w3-hover-opacity-off"
+              src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+              onclick="currentDiv(1)"/>
+
+              <img 
+              class="demo w3-opacity w3-hover-opacity-off" 
+              src="/images/pexels-photo-8781451.jpeg.jpg" style="width: 25.5%; cursor: pointer; padding: 7px" 
+              onclick="currentDiv(2)"/>                            
+
+              <img 
+              class="demo w3-opacity w3-hover-opacity-off" 
+              src="/images/pexels-photo-10664874.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+              onclick="currentDiv(3)"/>              
+
+              <img 
+              class="demo w3-opacity w3-hover-opacity-off" 
+              src="/images/pexels-photo-24302220.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+              onclick="currentDiv(4)"/>
+            </div>
+            <br />
+            <br />
+            
+            <h2 class="w3-center">
+              Our <span class="w3-opacity">Community</span> Rocks!!
+            </h2>
+            <br />
+
+            <!-- Beginning Scrollable text 1-->
+
+            <div class="grid">
+              <div class="box2">
+                <div class="w3-col w3-left w3-light-grey">
+                  <div class="w3-light-grey"
+                    style="margin-top: -18px;" 
+                    >
+                    <h1 class="w3-center">Community 1</h1>
                   </div>
-                  <div class="w3-col l10 m9">
-
-
+                  <div class="my-scrolling" style="padding-right: 10px">
+                    <p>
+                      Community 1 is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
+                    </p>
                   </div>
                 </div>
-                <div class="w3-row w3-margin-bottom">
-                  
-                  <div class="w3-col l10 m9">
-                   
-                   
+              </div>
+
+              <!-- Beginning Scrollable text 2 -->
+
+              <div class="box2">
+                <div class="w3-col w3-left w3-light-grey">
+                  <div class="w3-light-grey"
+                    style="margin-top: -18px;"
+                    >
+                    <h1 class="w3-center">Community 2</h1>
                   </div>
+                  <div class="my-scrolling" style="padding-right: 10px">
+                    <p>
+                      Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                      Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                    </p>
+                  </div>
+                </div>
+              </div>
 
+              <!-- Beginning Scrollable text 3 -->
 
-                  
+              <div class="box2">
+                <div class="w3-col w3-left w3-light-grey">
+                  <div class="w3-light-grey"
+                    style="margin-top: -18px;">
+                    <h1 class="w3-center">Community 3</h1>
+                    <div class="my-scrolling" style="padding-right: 10px">
+                      <p>
+                        Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- END BLOG ENTRIES -->
         </div>
-
-        <!-- About/Information menu -->
-        <div class="w3-col l4">
-          <!-- About Card -->
-          <div class="w3-white w3-margin">
-            <img
-              src="/w3images/avatar_girl2.jpg"
-              alt="Jane"
-              style="width: 100%"
-              class="w3-grayscale"
-            />
-            <div class="w3-container w3-black">
-              <h4>My Name</h4>
-              <p>
-                Just me, myself and I, exploring the universe of uknownment. I
-                have a heart of love and a interest of lorem ipsum and mauris
-                neque quam blog. I want to share my world with you.
-              </p>
-            </div>
-          </div>
-          <hr />
-
-          <!-- Posts -->
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Popular Posts</h4>
-            </div>
-            <ul class="w3-ul w3-hoverable w3-white">
-              <li class="w3-padding-16">
-                <img
-                  src="/w3images/avatar_smoke.jpg"
-                  alt="Image"
-                  class="w3-left w3-margin-right"
-                  style="width: 50px"
-                />
-                <span class="w3-large">Denim</span>
-                <br />
-                <span>Sed mattis nunc</span>
-              </li>
-              <li class="w3-padding-16">
-                <img
-                  src="/w3images/bandmember.jpg"
-                  alt="Image"
-                  class="w3-left w3-margin-right"
-                  style="width: 50px"
-                />
-                <span class="w3-large">Sweaters</span>
-                <br />
-                <span>Praes tinci sed</span>
-              </li>
-              <li class="w3-padding-16">
-                <img
-                  src="/w3images/workshop.jpg"
-                  alt="Image"
-                  class="w3-left w3-margin-right"
-                  style="width: 50px"
-                />
-                <span class="w3-large">Workshop</span>
-                <br />
-                <span>Ultricies congue</span>
-              </li>
-              <li class="w3-padding-16">
-                <img
-                  src="/w3images/avatar_smoke.jpg"
-                  alt="Image"
-                  class="w3-left w3-margin-right w3-sepia"
-                  style="width: 50px"
-                />
-                <span class="w3-large">Trends</span>
-                <br />
-                <span>Lorem ipsum dipsum</span>
-              </li>
-            </ul>
-          </div>
-          <hr />
-
-          <!-- Advertising -->
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Advertise</h4>
-            </div>
-            <div class="w3-container w3-white">
-              <div
-                class="w3-container w3-display-container w3-light-grey w3-section"
-                style="height: 200px"
-              >
-                <span class="w3-display-middle">Your AD Here</span>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <!-- Tags -->
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Tags</h4>
-            </div>
-            <div class="w3-container w3-white">
-              <p>
-                <span class="w3-tag w3-black w3-margin-bottom">Fashion</span>
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >New York</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >London</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Hats</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Norway</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Sweaters</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Ideas</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Deals</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Accessories</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >News</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Clothing</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Shopping</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Jeans</span
-                >
-                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                  >Trends</span
-                >
-              </p>
-            </div>
-          </div>
-          <hr />
-
-          <!-- Inspiration -->
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Inspiration</h4>
-            </div>
-            <div class="w3-row-padding w3-white">
-              <div class="w3-col s6">
-                <p>
-                  <img
-                    src="/w3images/jeans.jpg"
-                    alt="Jeans"
-                    style="width: 100%"
-                  />
-                </p>
-                <p>
-                  <img
-                    src="/w3images/team1.jpg"
-                    alt="Jeans"
-                    style="width: 100%"
-                  />
-                </p>
-              </div>
-              <div class="w3-col s6">
-                <p>
-                  <img
-                    src="/w3images/avatar_hat.jpg"
-                    alt="Men in Hats"
-                    style="width: 100%"
-                    class="w3-grayscale"
-                  />
-                </p>
-                <p>
-                  <img
-                    src="/w3images/team4.jpg"
-                    alt="Jeans"
-                    style="width: 100%"
-                  />
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Follow Me</h4>
-            </div>
-            <div class="w3-container w3-xlarge w3-padding">
-              <i class="fa fa-facebook-official w3-hover-opacity"></i>
-              <i class="fa fa-instagram w3-hover-opacity"></i>
-              <i class="fa fa-snapchat w3-hover-opacity"></i>
-              <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-              <i class="fa fa-twitter w3-hover-opacity"></i>
-              <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
-          </div>
-          <hr />
-
-          <!-- Subscribe -->
-          <div class="w3-white w3-margin">
-            <div class="w3-container w3-padding w3-black">
-              <h4>Subscribe</h4>
-            </div>
-            <div class="w3-container w3-white">
-              <p>
-                Enter your e-mail below and get notified on the latest blog
-                posts.
-              </p>
-              <p>
-                <input
-                  class="w3-input w3-border"
-                  type="text"
-                  placeholder="Enter e-mail"
-                  style="width: 100%"
-                />
-              </p>
-              <p>
-                <button
-                  type="button"
-                  onclick="document.getElementById('subscribe').style.display='block'"
-                  class="w3-button w3-block w3-red"
-                >
-                  Subscribe
-                </button>
-              </p>
-            </div>
-          </div>
-
-          <!-- END About/Intro Menu -->
-        </div>
-
-        <!-- END GRID -->
       </div>
 
+    <!-- END Main Content, Begin Right Side Preview Bar Debugged through here -->
+
+  </div>
+
       <!-- END w3-content -->
-    </div>
+  
 
     <!-- Subscribe Modal -->
     <div id="subscribe" class="w3-modal w3-animate-opacity">
@@ -668,12 +331,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
       >
-      <p>
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          >w3.css</a
-        >
-      </p>
+
       <div class="w3-bar w3-black w3-hide-small">
       <a href="#" class="w3-bar-item w3-button"
         ><i class="fa fa-linkedin"></i
@@ -696,10 +354,11 @@ and is wrapped around the whole page content, except for the footer in this exam
         >Accessibility</a>
     </footer>
 
-        <script>
-      // Toggle between showing and hiding the sidebar when clicking the menu icon
-      var mySidebar = document.getElementById("mySidebar");
+    <script>
 
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+
+      var mySidebar = document.getElementById("mySidebar");
       function w3_open() {
         if (mySidebar.style.display === "block") {
           mySidebar.style.display = "none";
@@ -712,9 +371,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       function w3_close() {
         mySidebar.style.display = "none";
       }
-    </script>
-
-    <script>
+ 
       // Toggle between hiding and showing blog replies/comments
       document.getElementById("myBtn").click();
       function myFunction(id) {
@@ -730,6 +387,81 @@ and is wrapped around the whole page content, except for the footer in this exam
         x.style.fontWeight = "bold";
         x.innerHTML = "✓ Liked";
       }
+
+      // carousel slideshow begin
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      // hook each carousel button
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // carousel slideshow end
+
+      // accordion begin
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+        } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+        }
+      }
+      // accordion end
+
+      // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] 
+          /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
     </script>
   </body>
 </html>
