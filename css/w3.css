@@ -1180,6 +1180,10 @@ a {
 .w3-margin-left {
   margin-left: 16px !important;
 }
+.w3-margin-left-2 {
+  margin-left: 64px !important;
+}
+
 .w3-margin-right {
   margin-right: 16px !important;
 }
