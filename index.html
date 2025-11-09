@@ -26,6 +26,7 @@
       type="text/JavaScript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
+
     <script
       type="text/JavaScript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
@@ -46,7 +47,7 @@
       }
 
       .my-scrolling{
-        height: 300px;
+        height: 700px;
         overflow: auto;       
       }
 
@@ -254,7 +255,7 @@
 
         <!-- About Page --> 
 
-        <div class="w3-container w3-white w3-margin" id="about">
+        <div class="w3-container w3-white w3-margin w3-padding-32" id="about">
           <div class="w3-center">
             <h1>
               <span class="w3-opacity">About</span>
@@ -406,6 +407,9 @@
           <!-- Patterns Table -->
 
           <table id="myTable" class="w3-table-all">
+
+            <!-- Header Row -->
+
             <thead>
               <tr class="w3-deep-purple">
                 <th>Picture</th>
@@ -414,6 +418,9 @@
                 <th>Level</th>
               </tr>
             </thead>
+
+            <!-- Pink Bird -->
+
             <tr class="w3-hover-asphalt">
               <td><img src="./images/IMG_6794.jpg" style="width: 120px" /></td>
               <td>Pink Bird</td>
@@ -428,6 +435,8 @@
               </td>
               <td>Beginner</td>
             </tr>
+
+            <!-- Turkey -->
 
             <tr class="w3-hover-asphalt">
               <td><img src="./images/IMG_6797.jpg" style="width: 120px" /></td>
@@ -444,6 +453,8 @@
               </td>
               <td>Advanced</td>
             </tr>
+
+            <!-- Bunnies -->
             
             <tr class="w3-hover-asphalt">
               <td><img src="./images/IMG_6787.jpg" style="width: 120px" /></td>
@@ -461,6 +472,8 @@
               <td>Intermediate</td>
             </tr>
 
+            <!-- Spiders -->
+
             <tr class="w3-hover-asphalt">
               <td><img src="./images/IMG_6803.jpg" style="width: 120px" /></td>
               <td>Spiders</td>
@@ -476,6 +489,8 @@
               </td>
               <td>Beginner</td>
             </tr>
+
+            <!-- Chick -->
 
             <tr class="w3-hover-asphalt">
               <td><img src="./images/IMG_6799.jpg" style="width: 120px" /></td>
@@ -500,7 +515,7 @@
 
         <!-- Community Page-->
 
-        <div class="w3-container w3-white w3-row" id="community">
+        <div class="w3-container w3-white w3-row w3-margin" id="community">
           <div class="w3-padding-large">
             <h1 class="w3-center">Community</h1>
 
@@ -518,15 +533,16 @@
 
               <img 
                 class="mySlides" 
-                src="/images/pexels-photo-10664874.jpeg.jpg" 
-                style="width: 100%; display: none" 
-              />
-
-              <img 
-                class="mySlides" 
                 src="/images/pexels-photo-24302220.jpeg.jpg"
                 style="width: 100%; display: none" 
               />
+
+                            <img 
+                class="mySlides" 
+                src="/images/IMG_6110.jpeg" 
+                style="width: 100%; display: none" 
+              />
+              
             </div>
             <br />
 
@@ -544,23 +560,23 @@
               <img 
               class="demo w3-opacity w3-hover-opacity-off" 
               src="/images/pexels-photo-8781451.jpeg.jpg" style="width: 25.5%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(2)"/>                            
-
-              <img 
-              class="demo w3-opacity w3-hover-opacity-off" 
-              src="/images/pexels-photo-10664874.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(3)"/>              
+              onclick="currentDiv(2)"/>                                          
 
               <img 
               class="demo w3-opacity w3-hover-opacity-off" 
               src="/images/pexels-photo-24302220.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+              onclick="currentDiv(3)"/>
+
+              <img 
+              class="demo w3-opacity w3-hover-opacity-off" 
+              src="/images/IMG_6110.jpeg" style="width: 25.5%; cursor: pointer; padding: 7px" 
               onclick="currentDiv(4)"/>
             </div>
             <br />
             <br />
             
             <h2 class="w3-center">
-              Our <span class="w3-opacity">Community</span> Rocks!!
+              Our Community <span class="w3-text-deep-purple">Rocks!!</span>
             </h2>
             <br />
 
@@ -572,9 +588,10 @@
                   <div class="w3-light-grey"
                     style="margin-top: -18px;" 
                     >
-                    <h1 class="w3-center">Community 1</h1>
+                    <h1 class="w3-center"><span class="w3-opacity">
+                    Community 1</h1></span>
                   </div>
-                  <div class="my-scrolling" style="padding-right: 10px">
+                  <div class="my-scrolling" style="padding-left: 10px">
                     <p>
                       Community 1 is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
                     </p>
@@ -589,9 +606,10 @@
                   <div class="w3-light-grey"
                     style="margin-top: -18px;"
                     >
-                    <h1 class="w3-center">Community 2</h1>
+                    <h1 class="w3-center"><span class="w3-opacity">
+                    Community 2</h1></span>
                   </div>
-                  <div class="my-scrolling" style="padding-right: 10px">
+                  <div class="my-scrolling" style="padding-left: 10px">
                     <p>
                       Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
                       Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
@@ -606,8 +624,9 @@
                 <div class="w3-col w3-left w3-light-grey">
                   <div class="w3-light-grey"
                     style="margin-top: -18px;">
-                    <h1 class="w3-center">Community 3</h1>
-                    <div class="my-scrolling" style="padding-right: 10px">
+                    <h1 class="w3-center"><span class="w3-opacity">
+                    Community 3</h1></span>
+                    <div class="my-scrolling" style="padding-left: 10px">
                       <p>
                         Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
                       </p>
@@ -643,54 +662,83 @@
 
 
       <!-- Patterns 2 -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4> Patterns Sidebar with extra pics</h4>
+      <div class="w3-white w3-margin w3-padding-64">
+        <div class="w3-container w3-padding w3-asphalt">
+          <h2> More patterns for your </h2>
+          <h2><span class="w3-opacity w3-right">hooking needs
+          </h2></span>
         </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
+        <ul class="w3-ul2 w3-hoverable w3-white">
+          <li class="w3-padding-64">
             <img
-            src="/images/pexels-photo-20068123.png.jpg"
+            src="/images/IMG_6802.jpg"
             alt="Image"
             class="w3-left w3-margin-right"
-            style="width: 50px"
+            style="width: 130px"
           />
-          <span class="w3-large">Trees</span>
+          <span class="w3-large">Yeti</span>
           <br />
-          <span>Sed mattis nunc</span>
+          <span>Intermediate Level</span>
           </li>
-          <li class="w3-padding-16">
+          
+          <li class="w3-padding-64">
             <img
-            src="/w3images/bandmember.jpg"
+            src="/images/IMG_6840.jpg"
             alt="Image"
             class="w3-left w3-margin-right"
-            style="width: 50px"
-            />
-            <span class="w3-large">Sweaters</span>
-            <br />
-            <span>Praes tinci sed</span>
+            style="width: 130px"
+          />
+          <span class="w3-large">Cute Bat</span>
+          <br />
+          <span>Beginner Level</span>
           </li>
-          <li class="w3-padding-16">
+
+          <li class="w3-padding-64">
             <img
-            src="/w3images/workshop.jpg"
+            src="/images/IMG_6826.jpg"
             alt="Image"
             class="w3-left w3-margin-right"
-            style="width: 50px"
+            style="width: 130px"
             />
-            <span class="w3-large">Hats</span>
+            <span class="w3-large">Killer Tomato</span>
             <br />
-            <span>Ultricies congue</span>
+            <span>Beginner Level</span>
           </li>
-          <li class="w3-padding-16">
+
+          <li class="w3-padding-64">
             <img
-            src="/w3images/avatar_smoke.jpg"
+            src="/images/IMG_6830.jpg"
             alt="Image"
-            class="w3-left w3-margin-right w3-sepia"
-            style="width: 50px"
+            class="w3-left w3-margin-right"
+            style="width: 130px"
             />
-            <span class="w3-large">Amigurumi</span>
+            <span class="w3-large">A Hoot of an Owl</span>
             <br />
-            <span>Lorem ipsum dipsum</span>
+            <span>Intermediate</span>
+          </li>
+          
+          <li class="w3-padding-64">
+            <img
+            src="/images/IMG_6817.jpg"
+            alt="Image"
+            class="w3-left w3-margin-right"
+            style="width: 130px"
+            />
+            <span class="w3-large">Cow</span>
+            <br />
+            <span>Advanced</span>
+          </li>
+
+          <li class="w3-padding-64">
+            <img
+            src="/images/IMG_6843.jpg"
+            alt="Image"
+            class="w3-left w3-margin-right"
+            style="width: 130px"
+            />
+            <span class="w3-large">Planter of Succulents</span>
+            <br />
+            <span>Advanced</span>
           </li>
         </ul>
       </div>
@@ -699,9 +747,10 @@
       <!-- Ad for Rit Dye, Add Carousel -->
       <div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
-          <h4>Ad for Rit Dye, Add Carousel</h4>
+          <h2 class="w3-center">Rit Dye,</h2> 
+          <h4 class="w3-italic w3-center">Great for dying yarn</h4>
         </div>
-      <div class="w3-container w3-white">
+      <div class="w3-container w3-asphalt">
         <div class="w3-row-padding w3-white"></div>
         <div
           class="w3-container w3-display-container w3-white w3-section"
@@ -717,128 +766,180 @@
           </div>
         </div>
       </div>
-      </div>
       <hr />
 
       <!-- Brochet Magazine Mockups -->
       <!-- What do I do with this section? -->
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Brochet & Friends Magazine</h4>
-    </div>
-    <div class="w3-container w3-white">
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Mockups Here</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >New York</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >London</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Hats</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Norway</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Sweaters</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Ideas</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Deals</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Accessories</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >News</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Clothing</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Shopping</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Jeans</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Trends</span
-        >
-      </p>
-    </div>
+      
+        <img
+        src="/images/Front and Back Cover 02 (single).jpg"
+        alt="Mockup of Brochet and Friends Magazine"
+        style="width: 100%"/>
+        <div class="w3-container w3-black">
+          <h2 class="w3-center w3-text-deep-purple">Brochet & Friends Magazine</h2>
+        </div>
+
       </div>
       <hr />
 
       <!-- Shopping side preview with additional content ADD TON MORE PICS TO FILL OUT HOME PAGE!! -->
       <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Shopping</h4>
-    </div>
-    <div class="w3-row-padding w3-white">
-      <div class="w3-col s6">
-        <p>
-          <img
-            src="/images/pexels-pietro-henricky-1289770821-30737615.jpg"
-            alt="Man in Crochet Outfit"
-            style="width: 100%"
-          />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-19911435.jpeg.jpg"
-            alt="Woman in Crochet Outfit"
-            style="width: 100%"
-          />
-        </p>
-      </div>
-      <div class="w3-col s6">
-        <p>
-          <img
-            src="/images/Brochet BootyCroched-Swimwear-front-turkis-mensweear-customised-zlcopenhagen-danish-design-handmade-in-eu.jpg"
-            alt="Crochet Swimsuit"
-            style="width: 100%"
-          
-          />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-30023852.jpeg.jpg"
-            alt="Crochet Bag and Pants"
-            style="width: 100%"
-          />
-        </p>
-      </div>
-    </div>
+        <div class="w3-container w3-padding w3-black">
+          <h4>Shopping</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-pietro-henricky-1289770821-30723803.jpg"
+                alt="Man in Crochet Outfit"
+                style="width: 100%"
+              />
+            </p>
+            <p>
+              <img
+                src="/images/pexels-photo-19911435.jpeg.jpg"
+                alt="Woman in Crochet Outfit"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/Brochet BootyCroched-Swimwear-front-turkis-mensweear-customised-zlcopenhagen-danish-design-handmade-in-eu.jpg"
+                alt="Crochet Swimsuit"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/g51b185694ebdf43e278e53a83b8a707add92f20e8c8afb0ec81e31fac1212b001877ba7e0e26f7a44581c065d80611ea.jpg.jpg"
+                alt="Crochet Pony"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/crochet woman.jpg"
+                alt="Crochet Coat"
+                style="width: 100%"
+              
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-photo-5806996.jpeg.jpg"
+                alt="Crochet Blanket"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-photo-30023852.jpeg.jpg"
+                alt="Crochet Bag and Pants"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-emmanuel-douglas-ofori-1443666008-28698973.jpg"
+                alt="Crochet Dress"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/brochet11-Rachel-Choi-366x550_366_550_64_c1.jpg"
+                alt="Crochet Dress"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-castorlystock-3639038.jpg"
+                alt="Crochet Hooks"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-leah-newhouse-50725-952581.jpg"
+                alt="Cat on a Blanket"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-pietro-henricky-1289770821-30737615.jpg"
+                alt="Man in Crochet Outfit"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+          <div class="w3-col s6">
+            <p>
+              <img
+                src="/images/pexels-photo-24246718.jpeg.jpg"
+                alt="Man in Crochet Outfit"
+                style="width: 100%"
+              />
+            </p>
+          </div>
+
+        </div>
       </div>
       <hr />
 
+ 
+    <!-- About Card -->
       <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Change Content, Social Media is in Footer</h4>
-    </div>
-    <div class="w3-container w3-xlarge w3-padding">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
+        <div class="w3-container w3-asphalt">
+          <h1 class="w3-center w3-text-deep-purple">The Institute of Yarn</h1>
+          <p class="w3-center">
+          Where anyone can follow their yarn muse
+          </p>
+        </div>
+        <img
+        src="/images/Brochet Institute of Yarn Ad.jpg"
+        alt="An ad for the Institute of Yarn"
+        style="width: 100%"/>
       </div>
-      <hr />
+      <br />
+      
+
 
       <!-- Subscribe -->
       <div class="w3-white w3-margin">
     <div class="w3-container w3-padding w3-asphalt">
-      <h4>Subscribe</h4>
+      <h4 class="w3-center">Subscribe to the Brochet & Friends email list</h4>
     </div>
     <div class="w3-container w3-white">
       <p>
-        Enter your e-mail below to receive our latest news.
+        Enter your e-mail below to receive our latest news
       </p>
       <p>
         <input
@@ -1026,14 +1127,14 @@
       $(document).ready(function () {
         $("table#myTable").tablesorter({
           sortList: [
-            [2, 1],
-          ] 
-          /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+            [1, 1],
+          ] /* 1st number - column to sort (starting 0, 1, 2, 3, etc), 2nd number - asending (2) or descending order (1) */,
           CssAsc: "tablesorter-headerAsc",
           CssDesc: "tablesorter-headerDesc",
         });
       });
       // sortable table end
+
     </script>
   </body>
 </html>

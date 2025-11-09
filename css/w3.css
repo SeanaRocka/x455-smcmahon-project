@@ -348,11 +348,23 @@ a {
   padding: 0;
   margin: 0;
 }
+.w3-ul2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .w3-ul li {
   padding: 8px 16px;
   border-bottom: 1px solid #ddd;
 }
+.w3-ul2 li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #fff;
+}
 .w3-ul li:last-child {
+  border-bottom: none;
+}
+.w3-ul2 li:last-child {
   border-bottom: none;
 }
 .w3-tooltip,

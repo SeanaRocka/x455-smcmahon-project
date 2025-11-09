@@ -20,18 +20,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!-- begin: add jquery script links to support for sortable table -->
-    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
-    <script
-      type="text/JavaScript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/JavaScript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
-    ></script>
-    <!-- end: add jquery script links to support for sortable table -->
-
     <style>
       h1,
       h2,
@@ -450,18 +438,6 @@
       }
       // accordion end
 
-      // sortable table begin
-      $(document).ready(function () {
-        $("table#myTable").tablesorter({
-          sortList: [
-            [2, 1],
-          ] 
-          /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
-          CssAsc: "tablesorter-headerAsc",
-          CssDesc: "tablesorter-headerDesc",
-        });
-      });
-      // sortable table end
     </script>
   </body>
 </html>
