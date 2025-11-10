@@ -74,6 +74,20 @@
           display: table;
       }
 
+            #linear-gradient {
+      width: 500px;
+      height: 150px;
+      background-color: darkgray;
+      background-image: linear-gradient(white, darkgray); 
+      }
+
+      #linear-gradient p {
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          color: white;
+      }
+
       .box, .grid, .grid::after { box-sizing: border-box; }
 
     </style>
@@ -122,7 +136,7 @@
 
 <!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
     
-  <div class="w3-content" style="max-width: 1600px">
+
 
     <!-- Header, figure out padding and maybe change logo to google font or just the brochet font-->
 
@@ -132,10 +146,9 @@
     <header class="w3-display-container w3-wide" id="home">
       <img
       class="w3-image"
-      src="images/Brochet and Friends home page pic with logos and image.jpg"
+      src="images/brochet and friends logo gray background.jpg"
       alt="Fashion Blog"
       width="1600"
-      height="1060"
       />
       <div class="w3-display-left w3-padding-large">
         <h6>
@@ -150,124 +163,127 @@
     </header>
 
     <!-- Grid -->
-    <div class="w3-row w3-padding w3-border">
+
       <!-- Figure out how to place things to center and right in this grid -->
-      <div class="w3-col l12">
+      
         
         <!-- Community Page-->
 
-        <div class="w3-container w3-white w3-row" id="community">
-          <div class="w3-padding-large">
-            <h1 class="w3-center">Community</h1>
-
-            <!-- carousel slideshow begin -->
-
-            <div class="w3-center">
-              
-              <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 100%" />
-
-              <img 
-                class="mySlides" 
-                src="/images/pexels-photo-8781451.jpeg.jpg" 
-                style="width: 100%; display: none" 
-              />
-
-              <img 
-                class="mySlides" 
-                src="/images/pexels-photo-10664874.jpeg.jpg" 
-                style="width: 100%; display: none" 
-              />
-
-              <img 
-                class="mySlides" 
-                src="/images/pexels-photo-24302220.jpeg.jpg"
-                style="width: 100%; display: none" 
-              />
-            </div>
-            <br />
-
-            <!-- carousel slideshow end -->
-
-            <!-- carousel thumbnail begin-->
-
-            <div class="w3-col l12">
-
-              <img 
-              class="demo w3-opacity w3-hover-opacity-off"
-              src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(1)"/>
-
-              <img 
-              class="demo w3-opacity w3-hover-opacity-off" 
-              src="/images/pexels-photo-8781451.jpeg.jpg" style="width: 25.5%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(2)"/>                            
-
-              <img 
-              class="demo w3-opacity w3-hover-opacity-off" 
-              src="/images/pexels-photo-10664874.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(3)"/>              
-
-              <img 
-              class="demo w3-opacity w3-hover-opacity-off" 
-              src="/images/pexels-photo-24302220.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
-              onclick="currentDiv(4)"/>
-            </div>
-            <br />
-            <br />
+      <div class="w3-row w3-padding-64" id="community">
+        <div class="w3-padding-large">
+          <h1 class="w3-center">
             
-            <h2 class="w3-center">
-              Our <span class="w3-opacity">Community</span> Rocks!!
-            </h2>
-            <br />
+          <span class="w3-opacity">Community
+          Contributions from the Brochet & Friends Community</h1></span>
+          <h3 class="w3-center">Below are pictures from our community as well as posts, writing and patterns</h3>
 
-            <!-- Beginning Scrollable text 1-->
+          <!-- carousel slideshow begin -->
+        
+          <div class="w3-center">
+            
+            <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 100%" />
 
-            <div class="grid">
-              <div class="box2">
-                <div class="w3-col w3-left w3-light-grey">
-                  <div class="w3-light-grey"
-                    style="margin-top: -18px;" 
-                    >
-                    <h1 class="w3-center">Community 1</h1>
-                  </div>
-                  <div class="my-scrolling" style="padding-right: 10px">
-                    <p>
-                      Community 1 is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
-                    </p>
-                  </div>
+            <img 
+              class="mySlides" 
+              src="/images/pexels-photo-8781451.jpeg.jpg" 
+              style="width: 100%; display: none" 
+            />
+
+            <img 
+              class="mySlides" 
+              src="/images/pexels-photo-10664874.jpeg.jpg" 
+              style="width: 100%; display: none" 
+            />
+
+            <img 
+              class="mySlides" 
+              src="/images/pexels-photo-24302220.jpeg.jpg"
+              style="width: 100%; display: none" 
+            />
+          </div>
+          <br />
+
+          <!-- carousel slideshow end -->
+
+          <!-- carousel thumbnail begin-->
+
+          <div class="w3-col l12">
+
+            <img 
+            class="demo w3-opacity w3-hover-opacity-off"
+            src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+            onclick="currentDiv(1)"/>
+
+            <img 
+            class="demo w3-opacity w3-hover-opacity-off" 
+            src="/images/pexels-photo-8781451.jpeg.jpg" style="width: 25.5%; cursor: pointer; padding: 7px" 
+            onclick="currentDiv(2)"/>                            
+
+            <img 
+            class="demo w3-opacity w3-hover-opacity-off" 
+            src="/images/pexels-photo-10664874.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+            onclick="currentDiv(3)"/>              
+
+            <img 
+            class="demo w3-opacity w3-hover-opacity-off" 
+            src="/images/pexels-photo-24302220.jpeg.jpg" style="width: 23%; cursor: pointer; padding: 7px" 
+            onclick="currentDiv(4)"/>
+          </div>
+          <br />
+          <br />
+          
+          <h2 class="w3-center">
+            Our <span class="w3-opacity">Community</span> Rocks!!
+          </h2>
+          <br />
+
+          <!-- Beginning Scrollable text 1-->
+
+          <div class="grid">
+            <div class="box2">
+              <div class="w3-col w3-left w3-light-grey">
+                <div class="w3-light-grey"
+                  style="margin-top: -18px;" 
+                  >
+                  <h1 class="w3-center">Community 1</h1>
+                </div>
+                <div class="my-scrolling" style="padding-right: 10px">
+                  <p>
+                    Community 1 is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Beginning Scrollable text 2 -->
+            <!-- Beginning Scrollable text 2 -->
 
-              <div class="box2">
-                <div class="w3-col w3-left w3-light-grey">
-                  <div class="w3-light-grey"
-                    style="margin-top: -18px;"
-                    >
-                    <h1 class="w3-center">Community 2</h1>
-                  </div>
-                  <div class="my-scrolling" style="padding-right: 10px">
-                    <p>
-                      Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
-                      Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
-                    </p>
-                  </div>
+            <div class="box2">
+              <div class="w3-col w3-left w3-light-grey">
+                <div class="w3-light-grey"
+                  style="margin-top: -18px;"
+                  >
+                  <h1 class="w3-center">Community 2</h1>
+                </div>
+                <div class="my-scrolling" style="padding-right: 10px">
+                  <p>
+                    Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                    Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Beginning Scrollable text 3 -->
+            <!-- Beginning Scrollable text 3 -->
 
-              <div class="box2">
-                <div class="w3-col w3-left w3-light-grey">
-                  <div class="w3-light-grey"
-                    style="margin-top: -18px;">
-                    <h1 class="w3-center">Community 3</h1>
-                    <div class="my-scrolling" style="padding-right: 10px">
-                      <p>
-                        Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
-                      </p>
-                    </div>
+            <div class="box2">
+              <div class="w3-col w3-left w3-light-grey">
+                <div class="w3-light-grey"
+                  style="margin-top: -18px;">
+                  <h1 class="w3-center">Community 3</h1>
+                  <div class="my-scrolling" style="padding-right: 10px">
+                    <p>
+                      Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. Community is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.    is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity. 
+                    </p>
                   </div>
                 </div>
               </div>
@@ -275,10 +291,12 @@
           </div>
         </div>
       </div>
+    </div>
+      
 
     <!-- END Main Content, Begin Right Side Preview Bar Debugged through here -->
 
-  </div>
+
 
       <!-- END w3-content -->
   
