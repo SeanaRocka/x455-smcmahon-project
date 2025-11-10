@@ -91,8 +91,8 @@
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
-  <body class="w3-light-grey">
-    <!-- 1-The body class gives the whole thing the light gray background-->
+  <body class="w3-dark-grey">
+  <!-- 1-The body class gives the whole thing the light gray background-->
     <a
     href="javascript:void(0)"
     class="w3-bar-item w3-button w3-left"
@@ -112,17 +112,17 @@
     onclick="w3_close()"
     class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
 
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Home</a
+    <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Home</a
     >
-    <a href="#articles" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Articles</a
+    <a href="./articles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Articles</a
     >
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-large">About</a
+    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">About</a
     >
-    <a href="#shopping" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Shopping</a
+    <a href="./shopping.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Shopping</a
     >
-    <a href="#patterns" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Patterns</a
+    <a href="./patterns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Patterns</a
     >
-    <a href="#community" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Community</a
+    <a href="./community.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Community</a
     >
   </nav>
 
@@ -141,32 +141,141 @@
     <header class="w3-container w3-center"></header>
 
     <!-- Image header -->
-    <header class="w3-display-container w3-wide" id="home">
-      <img
-      class="w3-image"
-      src="images/brochet and friends logo gray background.jpg"
-      alt="Fashion Blog"
-      width="1600"
-      height="1060"
-      />
-      <div class="w3-display-left w3-padding-large">
-        <h6>
-          <button
-          class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
-          onclick="document.getElementById('subscribe').style.display='block'"
-          >
-          SUBSCRIBE
-          </button>
-        </h6>
-      </div>
-    </header>
+      <header class="w3-display-container w3-wide" id="home">
+        <img
+        class="w3-image"
+        src="images/brochet and friends logo gray background.jpg"
+        alt="bros plus crochet equals brochet"
+        width="1600"
+        />
+        <div class="w3-display-left w3-padding-large">
+          <h6>
+            <button
+            class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
+            onclick="document.getElementById('subscribe').style.display='block'"
+            >
+            SUBSCRIBE
+            </button>
+          </h6>
+        </div>
+      </header>
 
-    <!-- Grid -->
-    <div class="w3-row w3-padding w3-border">
-      <!-- Figure out how to place things to center and right in this grid -->
+      <!-- Yarn Bombing -->
+      <header class="w3-display-container w3-wide" id="home">
+        <div class="w3-col l4">
+          <div class="w3-dark-grey w3-margin">
+            <img
+            src="/images/photo-1606829113636-1ceaf9c2893b.jpg"
+            alt="Tree that has been crocheted"
+            style="width: 100%"/>
+            <div class="w3-container w3-asphalt">
+              <h1 class="w3-center w3-text-deep-purple">Yarn Bombing</h1>
+              <h4 class="w3-center">Crochet in the Wild!</h4>
+              <h6 class="w3-center">pictures from around the world</h6>
+            </div>
+            <div class="w3-row-padding w3-asphalt">
+              <div class="w3-col">
+                <p>
+                  <img
+                    src="/images/pexels-photo-20068123.png.jpg"
+                    alt="Crochet Tree"
+                    style="width: 100%"
+                  />
+                </p>
+              </div>
+              <div class="w3-col">
+                <p>
+                  <img
+                    src="/images/gbfd9591cb9b00e446bac3b784dbe6c438389e9394e432877932a7287774c653d5ffb8ad76877ee4339a9615784a5100d.jpg.jpg"
+                    alt="Crochet Building"
+                    style="width: 100%"
+                  />
+                </p>
+              </div>
+              <div class="w3-col">
+                <p>
+                  <img
+                    src="/images/pexels-photo-8826921.jpeg.jpg"
+                    alt="Crochet Flowers"
+                    style="width: 100%"
+                  
+                  />
+                </p>
+              </div>
+              <div class="w3-col">
+                <p>
+                  <img
+                    src="/images/g66e0f25fbc74d6081adb45f8520f582cc73e234378104126c4cd105c6f59668ce0797b1394d5bf1bd85b0ac1493a9131.jpg.jpg"
+                    alt="Crochet Bike"
+                    style="width: 100%"
+                  />
+                </p>
+              </div>
+
+              <h4>Subscribe</h4>
+              </div>
+              <div class="w3-container w3-asphalt">
+                <p>
+                  Enter your e-mail below to receive our latest news.
+                </p>
+                <p>
+                  <input
+                    class="w3-input w3-border"
+                    type="text"
+                    placeholder="Enter e-mail"
+                    style="width: 100%"
+                  />
+                </p>
+                <p>
+                <button
+                  type="button"
+                  onclick="document.getElementById('subscribe').style.display='block'"
+                  class="w3-button w3-block w3-deep-purple">Subscribe
+                </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- END About/Intro Menu -->
+
+      <!-- Subscribe Modal -->
+      <div id="subscribe" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding: 32px">
+          <div class="w3-container w3-white">
+            <i
+              onclick="document.getElementById('subscribe').style.display='none'"
+              class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"
+            ></i>
+            <h2 class="w3-wide">SUBSCRIBE</h2>
+            <p>
+              Join my mailing list to receive updates on the latest blog posts and
+              other things.
+            </p>
+            <p>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Enter e-mail"
+              />
+            </p>
+            <button
+              type="button"
+              class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+              onclick="document.getElementById('subscribe').style.display='none'">Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Grid -->
       <div class="w3-col l8 s12">
         <!-- Articles -->
-        <div class="w3-container w3-white w3-margin w3-padding-large"  id="articles">
+        <div class="w3-container w3-dark-grey w3-margin w3-padding-large"  id="articles">
         <div class="w3-center">
           <h1 class="w3-center">Articles</h1>
           <h2> Hooking and Yarn News, <span class="w3-opacity">January 1st, 2026</span></h2>
@@ -225,13 +334,13 @@
 
         <!-- 4th article, Yarn Bombing --> 
         <p>
-          <img src="/images/pexels-photo-20068123.png.jpg"
+          <img src="/images/IMG_6090.jpeg"
           style="max-width: 375px; float: right; padding-left: 20px"
           />
           <h4>Crochet in the Wild</h4>
           <h2>Yarn Bombing: Pictures from Around the World</h2>
           <h4>Buzzers McBuzzerstein</h4> 
-          <a href="/images/pexels-photo-8826921.jpeg.jpg" target="_blank">Buzzers McBuzzerstein</a>
+          <a href="/images/" target="_blank">Buzzers McBuzzerstein</a>
           Sunt in culpa qui officia deserunt mollit anim id est laborum
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -249,288 +358,10 @@
           nostrud exercitation ullamco. 
           nostrud exercitation ullamco. 
         </p>
-        </div>
-        <hr />
       </div>
-        
+    </div>
 
     <!-- END Main Content, Begin Right Side Preview Bar Debugged through here -->
-    <!-- About/Information menu, Customize this with secondary material once main section on left complete -->
-    <div class="w3-col l4">
-    <!-- About Card -->
-      <div class="w3-white w3-margin">
-        <img
-        src="/images/pexels-photo-21643006.jpeg.jpg"
-        alt="Baby in a groot crochet outfit"
-        style="width: 100%"/>
-        <div class="w3-container w3-asphalt">
-          <h1 class="w3-center w3-text-deep-purple">Baby Groot</h1>
-            <p>
-            You can crochet a your own Baby Groot outfit for your youngling, or if you are adept at pattern adaptatation make one for yourself! Weekly Baby Groot Comic also included 
-
-            <!-- add link for baby groot pattern/comic? -->
-
-            <h5 class="w3-center">Here!!</h5>
-          </p>
-        </div>
-      </div>
-
-
-      <!-- Patterns 2 -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4> Patterns Sidebar with extra pics</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img
-            src="/images/pexels-photo-20068123.png.jpg"
-            alt="Image"
-            class="w3-left w3-margin-right"
-            style="width: 50px"
-          />
-          <span class="w3-large">Trees</span>
-          <br />
-          <span>Sed mattis nunc</span>
-          </li>
-          <li class="w3-padding-16">
-            <img
-            src="/w3images/bandmember.jpg"
-            alt="Image"
-            class="w3-left w3-margin-right"
-            style="width: 50px"
-            />
-            <span class="w3-large">Sweaters</span>
-            <br />
-            <span>Praes tinci sed</span>
-          </li>
-          <li class="w3-padding-16">
-            <img
-            src="/w3images/workshop.jpg"
-            alt="Image"
-            class="w3-left w3-margin-right"
-            style="width: 50px"
-            />
-            <span class="w3-large">Hats</span>
-            <br />
-            <span>Ultricies congue</span>
-          </li>
-          <li class="w3-padding-16">
-            <img
-            src="/w3images/avatar_smoke.jpg"
-            alt="Image"
-            class="w3-left w3-margin-right w3-sepia"
-            style="width: 50px"
-            />
-            <span class="w3-large">Amigurumi</span>
-            <br />
-            <span>Lorem ipsum dipsum</span>
-          </li>
-        </ul>
-      </div>
-      <hr />
-
-      <!-- Ad for Rit Dye, Add Carousel -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Ad for Rit Dye, Add Carousel</h4>
-        </div>
-      <div class="w3-container w3-white">
-        <div class="w3-row-padding w3-white"></div>
-        <div
-          class="w3-container w3-display-container w3-white w3-section"
-          >
-          <div class="w3-col s6">
-            <p>
-              <img
-                src="/images/RIt Ad 1 reworked.jpg"
-                alt="Jeans"
-                style="width: 200%"
-              />
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <hr />
-
-      <!-- Brochet Magazine Mockups -->
-      <!-- What do I do with this section? -->
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Brochet & Friends Magazine</h4>
-    </div>
-    <div class="w3-container w3-white">
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Mockups Here</span>
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >New York</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >London</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Hats</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Norway</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Sweaters</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Ideas</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Deals</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Accessories</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >News</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Clothing</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Shopping</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Jeans</span
-        >
-        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
-          >Trends</span
-        >
-      </p>
-    </div>
-      </div>
-      <hr />
-
-      <!-- Shopping side preview with additional content ADD TON MORE PICS TO FILL OUT HOME PAGE!! -->
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Shopping</h4>
-    </div>
-    <div class="w3-row-padding w3-white">
-      <div class="w3-col s6">
-        <p>
-          <img
-            src="/images/pexels-pietro-henricky-1289770821-30737615.jpg"
-            alt="Man in Crochet Outfit"
-            style="width: 100%"
-          />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-19911435.jpeg.jpg"
-            alt="Woman in Crochet Outfit"
-            style="width: 100%"
-          />
-        </p>
-      </div>
-      <div class="w3-col s6">
-        <p>
-          <img
-            src="/images/Brochet BootyCroched-Swimwear-front-turkis-mensweear-customised-zlcopenhagen-danish-design-handmade-in-eu.jpg"
-            alt="Crochet Swimsuit"
-            style="width: 100%"
-          
-          />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-30023852.jpeg.jpg"
-            alt="Crochet Bag and Pants"
-            style="width: 100%"
-          />
-        </p>
-      </div>
-    </div>
-      </div>
-      <hr />
-
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
-      <h4>Change Content, Social Media is in Footer</h4>
-    </div>
-    <div class="w3-container w3-xlarge w3-padding">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-      </div>
-      <hr />
-
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-asphalt">
-      <h4>Subscribe</h4>
-    </div>
-    <div class="w3-container w3-white">
-      <p>
-        Enter your e-mail below to receive our latest news.
-      </p>
-      <p>
-        <input
-          class="w3-input w3-border"
-          type="text"
-          placeholder="Enter e-mail"
-          style="width: 100%"
-        />
-      </p>
-      <p>
-        <button
-          type="button"
-          onclick="document.getElementById('subscribe').style.display='block'"
-          class="w3-button w3-block w3-deep-purple">
-        Subscribe</button>
-      </p>
-    </div>
-      </div>
-
-     <!-- END About/Intro Menu -->
-    </div>
-
-  <!-- END GRID -->
-  </div>
-
-      <!-- END w3-content -->
-  
-
-    <!-- Subscribe Modal -->
-    <div id="subscribe" class="w3-modal w3-animate-opacity">
-      <div class="w3-modal-content" style="padding: 32px">
-        <div class="w3-container w3-white">
-          <i
-            onclick="document.getElementById('subscribe').style.display='none'"
-            class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"
-          ></i>
-          <h2 class="w3-wide">SUBSCRIBE</h2>
-          <p>
-            Join my mailing list to receive updates on the latest blog posts and
-            other things.
-          </p>
-          <p>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Enter e-mail"
-            />
-          </p>
-          <button
-            type="button"
-            class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
-            onclick="document.getElementById('subscribe').style.display='none'"
-          >
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </div>
 
     <!-- Footer -->
     <footer class="w3-container w3-dark-grey" style="padding: 32px">
