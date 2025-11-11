@@ -105,6 +105,12 @@
           display: table;
       }
 
+      .video-mask{
+      width: 310px;
+      border-radius: 23px; 
+      overflow: hidden; 
+      }
+
       .box, .grid, .grid::after { box-sizing: border-box; }
 
     </style>
@@ -211,14 +217,17 @@
             <div class="box2">
               <div style="padding-top: 20px">
                 <div class="w3-right">
-                  <iframe 
-                    width="310" 
-                    src="https://www.youtube.com/embed/rf2PyvttJnA?si=JoDKzBhvN-0_Chx5" 
-                    title="Crocheting on the train" 
-                    frameborder="0" 
-                    allow="autoplay;">
-                  </iframe>
-
+                  <div class="video-mask">
+                    <iframe 
+                      width="310" 
+                      src="https://www.youtube.com/embed/rf2PyvttJnA?si=JoDKzBhvN-0_Chx5" 
+                      title="Crocheting on the train" 
+                      frameborder="0" 
+                      allow="autoplay;
+                      "
+                      >
+                    </iframe>
+                  </div>
                   <!-- Begin 1st Accordion. -->
 
                   <div class="w3-row">
@@ -259,12 +268,14 @@
 
                 <!-- 2nd youtube About Content-->
 
+              <div class="video-mask">
                 <iframe width="310" 
                   src="https://www.youtube.com/embed/ErwOgdK57I4?si=Pd1Dqsa26fu6JIUj" 
                   title="Crochet Poncho" 
                   frameborder="0" 
                   allow="autoplay;">
                 </iframe>
+              </div>
                 
                 <!-- Begin 2nd Accordion  -->   
 
@@ -291,13 +302,14 @@
 
             <div class="box2">
               <div class="w3-right">
-                <iframe width="310" 
-                  src="https://www.youtube.com/embed/NFDmsNCGcvc?si=5TrFLZuK4mTf-xp7" 
-                  title="Yarn Bombing" 
-                  frameborder="0" 
-                  allow="autoplay;">
-                </iframe> 
-                
+                <div class="video-mask">
+                  <iframe width="310" 
+                    src="https://www.youtube.com/embed/NFDmsNCGcvc?si=5TrFLZuK4mTf-xp7" 
+                    title="Yarn Bombing" 
+                    frameborder="0" 
+                    allow="autoplay;">
+                  </iframe> 
+                </div>                
                 <!-- Begin 3rd Accordion -->
 
                 <div class="w3-row">
