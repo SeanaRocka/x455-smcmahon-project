@@ -162,191 +162,247 @@
 
     <!-- Grid -->
 
-      <!-- Figure out how to place things to center and right in this grid -->
-      <div class="w3-container w3-white w3-margin w3-padding-64" id="shopping">
-        <div class="w3-row w3-padding-64">
-          <div class="w3-col s1">
-            <p><span style="color:white">Brochet&Friends</span></p>
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/pexels-photo-24302220.jpeg.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/pexels-pietro-henricky-1289770821-30737615.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/brochet11-Rachel-Choi-366x550_366_550_64_c1.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s5 w3-padding-large">
-            <h1 class="w3-left">
-            <span class="w3-jumbo">Fashion</span></h1>
-          </div>
+    <div class="w3-container w3-white w3-margin w3-padding-64" id="shopping">
+      <!-- First row of pics--> 
+      <div class="w3-row w3-padding-64">
+        <div class="w3-col s1">
+          <p><span style="color:white">Brochet&Friends</span></p>
         </div>
-        <br />
-        <br />
-        <br />
-        <div class="w3-row w3-padding"></div>
-          <div class="w3-col s5 w3-padding-large">
-            <h1 class="w3-right">
-            <span class="w3-jumbo">Shopping</span></h1>
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/pexels-anderson-martinsz-13317715.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/pexels-kseniachernaya-8054233.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s2">
-            <img
-              src="./images/pexels-nonso-ebeofor-342802261-16989511.jpg"
-              style="width: 100%; cursor: zoom-in"
-              onclick="document.getElementById('modal01').style.display='block'"
-              class="w3-hover-shadow"
-            />
-          </div>
-          <div class="w3-col s1">
-            <p><span style="color:white">Brochet&Friends</span></p>
-          </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/pexels-planeteelevene-3310845.jpg"
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal01').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/pexels-pietro-henricky-1289770821-30737615.jpg"
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal02').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/brochet11-Rachel-Choi-366x550_366_550_64_c1.jpg"
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal03').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s5 w3-padding-large">
+          <h1 class="w3-left">
+          <span class="w3-jumbo">Shopping</span></h1>
+        </div>
       </div>
+      <br />
+      <br />
+      <br />
 
+      <!-- Second row of pics--> 
+      <div class="w3-row w3-padding"></div>
+        <div class="w3-col s5 w3-padding-large">
+          <h1 class="w3-right">
+          <span class="w3-jumbo w3-opacity">More Shopping!</span></h1>
+        </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/pexels-photo-24302220.jpeg.jpg"
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal04').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/pexels-anderson-martinsz-13317715.jpg"
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal05').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s2">
+          <img
+            src="./images/pexels-nonso-ebeofor-342802261-16989511.jpg"  
+            style="width: 100%; cursor: zoom-in"
+            onclick="document.getElementById('modal06').style.display='block'"
+            class="w3-hover-shadow"
+          />
+        </div>
+        <div class="w3-col s1">
+          <p><span style="color:white">Brochet&Friends</span></p>
+        </div>
+      </div>
+    </div>
 
+    <!-- add the first modal, set id="modal01"-->
+    <!-- each lightbox content (modal) should have a unique modal id -->
+    <div
+      id="modal01"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Crochet Sweater</h4>
+        <img src="./images/pexels-planeteelevene-3310845.jpg"
+        style="width: 100%" />
         
-      <!-- Shopping -->
-
-          <div class="w3-center">
-
-            <h5>Crochet to Purchase<span class="w3-opacity">January 1st, 2026</span>
-            </h5>
-          </div>
-          <p>
-            <h4>Shopping Text</h4>
-            <h2>More text about shopping</h2>
-            <h4>something else about shopping</h4>     
-            Shopping shopping shopping is reviewed this week by the Mother of Crochet herself, Riego de la Branchardière. Henricky is a fashion photographer who has often worked with crochet artists and celebrates diversity. His photography strikes a beautiful balance between masculinity and feminity.  
-          </p>
-        </div>
-        <hr />
       </div>
+    </div>
 
+    <!-- add the second modal, set id="modal02"-->
+    <div
+      id="modal02"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Men's Ensemble</h4>
+        <img src="./images/pexels-pietro-henricky-1289770821-30737615.jpg" style="width: 100%" />
+      </div>
+    </div>
 
+    <!-- 3rd modal, set id="modal03"-->
+    <div
+      id="modal03"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Colorful Fashion</h4>
+        <img src="./images/brochet11-Rachel-Choi-366x550_366_550_64_c1.jpg" style="width: 100%" />
+      </div>
+    </div>
+
+    <!-- 4th modal, set id="modal04"-->
+    <div
+      id="modal04"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Top and Skirt</h4>
+        <img src="./images/pexels-photo-24302220.jpeg.jpg" style="width: 100%" />
+      </div>
+    </div>
+
+    <!-- 5th modal, set id="modal05"-->
+    <div
+      id="modal05"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Blue Outfit</h4>
+        <img src="./images/pexels-anderson-martinsz-13317715.jpg" style="width: 100%" />
+      </div>
+    </div>
+
+    <!-- 6th modal, set id="modal06"-->
+    <div
+      id="modal06"
+      class="w3-modal"
+      onclick="this.style.display='none'"
+    >
+      <!-- add close button-->
+      <span
+        class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+        style="cursor: pointer"
+        >&times;</span
+      >
+      <!-- add modal background image -->
+      <div class="w3-modal-content w3-animate-zoom">
+        <h4 class="w3-center">Green Top</h4>
+        <img src="./images/pexels-nonso-ebeofor-342802261-16989511.jpg"style="width: 100%" />
+      </div>
+    </div>
 
     <!-- END Main Content, Begin Right Side Preview Bar Debugged through here -->
     <!-- About/Information menu, Customize this with secondary material once main section on left complete -->
-    <div class="w3-col l6 S12">
-    <!-- About Card -->
-      <div class="w3-white w3-margin">
-        <img
-        src="/images/pexels-photo-21643006.jpeg.jpg"
-        alt="Baby in a groot crochet outfit"
-        style="width: 100%"/>
-        <div class="w3-container w3-asphalt">
-          <h1 class="w3-center w3-text-deep-purple">Baby Groot</h1>
-            <p>
-            You can crochet a your own Baby Groot outfit for your youngling, or if you are adept at pattern adaptatation make one for yourself! Weekly Baby Groot Comic also included 
+    <div class="w3-col l6">
 
-            <!-- add link for baby groot pattern/comic? -->
-
-            <h5 class="w3-center">Here!!</h5>
-          </p>
-        </div>
-      </div>
-
-
-            <!-- Ad for Rit Dye, Add Carousel -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Ad for Rit Dye, Add Carousel</h4>
-        </div>
-      <div class="w3-container w3-white">
-        <div class="w3-row-padding w3-white"></div>
-        <div
-          class="w3-container w3-display-container w3-white w3-section"
-          >
-          <div class="w3-col s6">
-            <p>
-              <img
-                src="/images/RIt Ad 1 reworked.jpg"
-                alt="Advertisement for Rit Dye"
-                style="width: 200%"
-              />
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-      <hr />
-
-      
-      <!-- Shopping side preview with additional content ADD TON MORE PICS TO FILL OUT HOME PAGE!! -->
-      <div class="w3-white w3-margin">
-    <div class="w3-container w3-padding w3-black">
+    <!-- Shopping side w3-col s6 -->
+    <div class="w3-white w3-margin">
+      <div class="w3-container w3-padding w3-black">
       <h4>Shopping</h4>
-    </div>
-    <div class="w3-row-padding w3-white">
-      <div class="w3-col s6">
-        <p>
+      </div>
+      <div class="w3-row-padding w3-white">
+        <div class="w3-col s6">
+          <p>
           <img
             src="/images/pexels-pietro-henricky-1289770821-30737615.jpg"
             alt="Man in Crochet Outfit"
             style="width: 100%"
           />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-19911435.jpeg.jpg"
-            alt="Woman in Crochet Outfit"
-            style="width: 100%"
-          />
-        </p>
-      </div>
-      <div class="w3-col s6">
-        <p>
-          <img
-            src="/images/Brochet BootyCroched-Swimwear-front-turkis-mensweear-customised-zlcopenhagen-danish-design-handmade-in-eu.jpg"
-            alt="Crochet Swimsuit"
-            style="width: 100%"
-          
-          />
-        </p>
-        <p>
-          <img
-            src="/images/pexels-photo-30023852.jpeg.jpg"
-            alt="Crochet Bag and Pants"
-            style="width: 100%"
-          />
-        </p>
+          </p>
+          <p>
+            <img
+              src="/images/pexels-photo-19911435.jpeg.jpg"
+              alt="Woman in Crochet Outfit"
+              style="width: 100%"
+            />
+          </p>
+        </div>
+        <div class="w3-col s6">
+          <p>
+            <img
+              src="/images/Brochet BootyCroched-Swimwear-front-turkis-mensweear-customised-zlcopenhagen-danish-design-handmade-in-eu.jpg"
+              alt="Crochet Swimsuit"
+              style="width: 100%"
+            
+            />
+          </p>
+          <p>
+            <img
+              src="/images/pexels-photo-30023852.jpeg.jpg"
+              alt="Crochet Bag and Pants"
+              style="width: 100%"
+            />
+          </p>
+        </div>
       </div>
     </div>
-      </div>
-      <hr />
 
-     <!-- END About/Intro Menu -->
-    </div>
+
+    <!-- END About/Intro Menu -->
+  
 
   <!-- END GRID -->
   </div>
