@@ -129,6 +129,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: none;
 }
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -169,6 +170,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+  appearance: none;
 }
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
