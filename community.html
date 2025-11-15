@@ -33,6 +33,8 @@
         font-family: "Open Sans";
       }
 
+      img {border-radius: 20%}
+
       .my-scrolling{
         height: 300px;
         overflow: auto;       
@@ -74,7 +76,7 @@
           display: table;
       }
 
-            #linear-gradient {
+      #linear-gradient {
       width: 500px;
       height: 150px;
       background-color: darkgray;
@@ -90,10 +92,11 @@
 
       .box, .grid, .grid::after { box-sizing: border-box; }
 
+
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
-  <body class="w3-black">
+  <body class="w3-sand">
     <!-- 1-The body class gives the whole thing the light gray background-->
     <a
     href="javascript:void(0)"
@@ -145,10 +148,11 @@
   <!-- Image header -->
   <header class="w3-display-container w3-wide" id="home">
     <img
-    class="w3-image"
-    src="./images/Brochet and Friends home logo with black background and gray text.jpg"
+    class="w3-image"  
+    src="./images/Brochet and Friends home logo deep purple letters with gray background.jpg"
     alt="Crochet Website"
     width="1600"
+    style="border-radius: 0"
     />
     <div class="w3-display-left w3-padding-large">
       <h6>
@@ -163,37 +167,44 @@
   </header>
 
   <!-- Grid -->
-  <div class="w3-row w3-padding w3-border-black">
+  <div class="w3-row w3-padding w3-border-gray">
     <!-- Community Page-->  
-    <div class="w3-container w3-dark-gray w3-margin w3-padding-large"  id="articles">
+    <div class="w3-container w3-gray w3-margin w3-padding-64"  id="articles">
       <h1 class="w3-center">
         
-      <span class="w3-opacity">Contributions from the Brochet & Friends Community</h1></span>
+      <span class="w3-text-deep-purple w3-xxxlarge">Contributions from the Brochet & Friends Community</h1></span>
+      <br />
+      <br />
 
       <!-- carousel slideshow begin -->
     
       <div class="w3-center">
+        <div id="rounded-corners"> 
         
-        <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 92%" />
+        
+          <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 100%" />
 
-        <img 
-          class="mySlides" 
-          src="./images/pexels-photo-8781451.jpeg.jpg" 
-          style="width: 102%; display: none" 
-        />
+          <img 
+            class="mySlides" 
+            src="./images/pexels-photo-do-it-for-yourself-2-3rationcrop.jpg" 
+            style="width: 100%; display: none" 
+          />
 
-        <img 
-          class="mySlides" 
-          src="./images/pexels-photo-24302220.jpeg.jpg" 
-          style="width: 92%; display: none" 
-        />
+          <img 
+            class="mySlides" 
+            src="./images/pexels-photo-red-dress-woman-2-3ratiocrop.jpg" 
+            style="width: 100%; display: none" 
+          />
 
-        <img 
-          class="mySlides" 
-          src="./images/IMG_6110.jpeg"
-          style="width: 102%; display: none" 
-        />
-      </div>
+          <img 
+            class="mySlides" 
+            src="./images/sm-rainbow-2-3ratiocrop.jpg"
+            style="width: 100%; display: none" 
+          />
+        </div>
+      </div>  
+      <br />
+      <br />
       <br />
 
       <!-- carousel slideshow end -->
@@ -232,8 +243,8 @@
 
       <div class="grid">
         <div class="box2">
-          <div class="w3-col w3-left w3-dark-gray">
-            <div class="w3-dark-gray"
+          <div class="w3-col w3-left w3-gray">
+            <div class="w3-gray"
               style="margin-top: -18px;" 
               >
               <h1 class="w3-center">This Website</h1>
@@ -264,8 +275,8 @@
         <!-- Beginning Scrollable text 2 -->
 
         <div class="box2">
-          <div class="w3-col w3-left w3-dark-gray">
-            <div class="w3-dark-gray"
+          <div class="w3-col w3-left w3-gray">
+            <div class="w3-gray"
               style="margin-top: -18px;"
               >
               <h1 class="w3-center">
@@ -287,8 +298,8 @@
         <!-- Beginning Scrollable text 3 -->
 
         <div class="box2">
-          <div class="w3-col w3-left w3-dark-gray">
-            <div class="w3-dark-gray"
+          <div class="w3-col w3-left w3-gray">
+            <div class="w3-gray"
               style="margin-top: -18px;">
               <h1 class="w3-center">Getting Involved</h1>
               <div class="my-scrolling" style="padding-right: 10px">
@@ -349,12 +360,12 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-dark-gray" style="padding: 32px">
-      <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"
+    <footer class="w3-container w3-sand" style="padding: 32px">
+      <a href="#" class="w3-button w3-gray w3-padding-large w3-margin-bottom"
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
       >
 
-      <div class="w3-bar w3-black w3-hide-small">
+      <div class="w3-bar w3-gray w3-hide-small">
       <a href="#" class="w3-bar-item w3-button"
         ><i class="fa fa-linkedin"></i
       ></a>
