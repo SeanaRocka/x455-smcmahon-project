@@ -174,24 +174,24 @@
     
       <div class="w3-center">
         
-        <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 100%" />
+        <img class="mySlides" src="./images/g457198ed288418d7c1ab0ee7c68ce3db04a43c0516f438970e6ab4e61bd5f9af69fc245f678b74a666e7f32dd099c846.jpg.jpg" style="width: 92%" />
 
         <img 
           class="mySlides" 
           src="./images/pexels-photo-8781451.jpeg.jpg" 
-          style="width: 100%; display: none" 
+          style="width: 102%; display: none" 
         />
 
         <img 
           class="mySlides" 
           src="./images/pexels-photo-24302220.jpeg.jpg" 
-          style="width: 100%; display: none" 
+          style="width: 92%; display: none" 
         />
 
         <img 
           class="mySlides" 
           src="./images/IMG_6110.jpeg"
-          style="width: 100%; display: none" 
+          style="width: 102%; display: none" 
         />
       </div>
       <br />
@@ -395,22 +395,6 @@
       function w3_close() {
         mySidebar.style.display = "none";
       }
- 
-      // Toggle between hiding and showing blog replies/comments
-      document.getElementById("myBtn").click();
-      function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-
-      function likeFunction(x) {
-        x.style.fontWeight = "bold";
-        x.innerHTML = "✓ Liked";
-      }
 
       // carousel slideshow begin
       var myIndex = 0;
@@ -430,6 +414,7 @@
       }
 
       // slideshow - carousel
+
       // hook each carousel button
       function currentDiv(n) {
         showDivs((slideIndex = n));

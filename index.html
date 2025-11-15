@@ -1059,113 +1059,98 @@
       >Accessibility</a>
   </footer>
 
-    <script>
+  <script>
 
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
 
-      var mySidebar = document.getElementById("mySidebar");
-      function w3_open() {
-        if (mySidebar.style.display === "block") {
-          mySidebar.style.display = "none";
-        } else {
-          mySidebar.style.display = "block";
-        }
-      }
-
-      // Close the sidebar with the close button
-      function w3_close() {
+    var mySidebar = document.getElementById("mySidebar");
+    
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
         mySidebar.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
       }
- 
-      // Toggle between hiding and showing blog replies/comments
-      document.getElementById("myBtn").click();
-      function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
+    }
 
-      function likeFunction(x) {
-        x.style.fontWeight = "bold";
-        x.innerHTML = "✓ Liked";
-      }
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
 
-      // carousel slideshow begin
-      var myIndex = 0;
-      carousel();
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+    // carousel slideshow begin
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-
-      // slideshow - carousel
-      // hook each carousel button
-      function currentDiv(n) {
-        showDivs((slideIndex = n));
-        myIndex = n;
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1;
       }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-opacity-off";
+    // slideshow - carousel
+    // hook each carousel button
+    function currentDiv(n) {
+      showDivs((slideIndex = n));
+      myIndex = n;
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1;
       }
-      // carousel slideshow end
-
-      // accordion begin
-      function myAccordion(id) {
-        var x = document.getElementById(id);
-        // if the accordion text is hidden, show it and change the button color to orange
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
-        } else {
-          // if the accordion text is displayed, hide it and change the button color to brown
-          x.className = x.className.replace(" w3-show", "");
-          x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
-        }
+      if (n < 1) {
+        slideIndex = x.length;
       }
-      // accordion end
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+    // carousel slideshow end
 
-      // sortable table begin
-      $(document).ready(function () {
-        $("table#myTable").tablesorter({
-          sortList: [
-            [1, 1],
-          ] /* 1st number - column to sort (starting 0, 1, 2, 3, etc), 2nd number - asending (2) or descending order (1) */,
-          CssAsc: "tablesorter-headerAsc",
-          CssDesc: "tablesorter-headerDesc",
-        });
+    // accordion begin
+    function myAccordion(id) {
+      var x = document.getElementById(id);
+      // if the accordion text is hidden, show it and change the button color to orange
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+      } else {
+        // if the accordion text is displayed, hide it and change the button color to brown
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+          x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+      }
+    }
+    // accordion end
+
+    // sortable table begin
+    $(document).ready(function () {
+      $("table#myTable").tablesorter({
+        sortList: [
+          [1, 1],
+        ] /* 1st number - column to sort (starting 0, 1, 2, 3, etc), 2nd number - asending (2) or descending order (1) */,
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc",
       });
-      // sortable table end
+    });
+    // sortable table end
 
     </script>
   </body>
