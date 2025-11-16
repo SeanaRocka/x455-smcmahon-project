@@ -1031,6 +1031,10 @@ a {
   position: relative;
   animation: animateleft 1s;
 }
+.w3-animate-left-3 {
+  position: relative;
+  animation: animateleft 3s;
+}
 @keyframes animateleft {
   from {
     left: -300px;
