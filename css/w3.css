@@ -484,6 +484,14 @@ a {
   outline: 0;
   width: 600px;
 }
+.w3-modal-content-2 {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: "width: 100%";
+}
 .w3-bar {
   width: 100%;
   overflow: hidden;
