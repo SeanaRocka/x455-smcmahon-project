@@ -1002,6 +1002,9 @@ a {
 .w3-animate-opacity {
   animation: opac 0.8s;
 }
+.w3-animate-opacity-4 {
+  animation: opac 4s;
+}
 @keyframes opac {
   from {
     opacity: 0;
@@ -1026,7 +1029,7 @@ a {
 }
 .w3-animate-left {
   position: relative;
-  animation: animateleft 0.4s;
+  animation: animateleft 1s;
 }
 @keyframes animateleft {
   from {
@@ -1168,6 +1171,9 @@ a {
 }
 .w3-border-black {
   border: 2px solid #000 !important;
+}
+.w3-border-black-1 {
+  border: 1px solid #1a1a1a !important;
 }
 .w3-border-top {
   border-top: 1px solid #ccc !important;

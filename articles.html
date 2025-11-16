@@ -86,12 +86,18 @@
           display: table;
       }
 
-      .box, .grid, .grid::after { box-sizing: border-box; }
+      .box, .grid, .grid::after { box-sizing: border-box; 
+      }
+
+      #grad1 {
+        background-color: rgb(169, 169, 169); /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom, rgb(169, 169, 169), rgb(24, 24, 24));
+      }
 
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
-  <body class="w3-dark-gray">
+  <body id="grad1">
   <!-- 1-The body class gives the whole thing the light gray background-->
     <a
     href="javascript:void(0)"
@@ -141,7 +147,7 @@
     <header class="w3-container w3-center"></header>
 
     <!-- Image header -->
-    <header class="w3-display-container w3-wide">
+    <header class="w3-display-container w3-wide w3-border-black-1" >
       <img
       class="w3-image"
       src="./images/Brochet and Friends home logo with gray background.psd.jpg"
@@ -165,9 +171,9 @@
 
     <!-- Grid -->
     <!-- Yarn Bombing -->
-    <div class="w3-row w3-padding w3-border" >
+    <div class="w3-row w3-padding w3-border-black-1" >
       <div class="w3-col l4 s12">
-        <div class="w3-container w3-dark-gray w3-margin">
+        <div class="w3-container w3-margin">
           <img
           src="./images/photo-1606829113636-1ceaf9c2893b.jpg"
           alt="Tree that has been crocheted"
@@ -459,7 +465,7 @@
   <!-- END Main Content, Begin Right Side Preview Bar Debugged through here -->
 
   <!-- Footer -->
-  <footer class="w3-container w3-dark-gray" style="padding: 32px">
+  <footer class="w3-container" style="padding: 32px; color: rgb(24, 24, 24)">
     <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"
       ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
     >

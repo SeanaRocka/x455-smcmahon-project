@@ -98,10 +98,16 @@
         background-size: cover;
       }
 
+      /* gradient */
+      #grad1 {
+        background-color: white; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to top, rgb(48, 48, 48), white);
+      }
+
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
-  <body class="w3-sand">
+  <body id="grad1">
     <!-- 1-The body class gives the whole thing the light gray background-->
     <a
     href="javascript:void(0)"
@@ -144,7 +150,7 @@
 
 <!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
     
-  <div class="w3-content" style="max-width: 1600px">
+  
 
     <!-- Header -->
 
@@ -156,7 +162,7 @@
       class="w3-image"
       src="./images/Brochet and Friends home logo deep purple letters with gray background.jpg"
       alt="Crochet Website"
-      width="1600"
+      width="100%"
       />
       <div class="w3-display-left w3-padding-large">
         <h6>
@@ -170,9 +176,12 @@
       </div>
     </header>
 
+
+
     <!-- Grid -->
 
-    <div class="w3-container w3-sand w3-margin w3-padding-32" id="shopping">
+    <div class="w3-container w3-margin w3-padding-32" id="shopping">
+
       <!-- First row of pics--> 
       <div class="w3-row w3-padding-32">
         <div class="w3-col s1">
@@ -324,6 +333,7 @@
         </div>
       </div>
     </div>
+    </div>
       
 
 
@@ -338,7 +348,8 @@
 
 
     <!-- Footer -->
-    <footer class="w3-container w3-sand" style="padding: 32px">
+
+    <footer class="w3-container" style="padding: 32px">
       <a href="#" class="w3-button w3-gray w3-padding-large w3-margin-bottom"
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
       >
@@ -391,6 +402,7 @@
       >Accessibility
     </a>
     </footer>
+
 
     <script>
 
