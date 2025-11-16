@@ -64,6 +64,13 @@
         max-width: 65%;
       }
 
+            /* center the carousel slide */
+      .mySlides2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+
       /* adding box from book page 150 for about section youtubes */
 
       .box {
@@ -423,7 +430,8 @@
             
             <!-- Patterns Table -->
 
-            <table id="myTable" class="w3-table-all">
+            <table id="myTable" class="w3-table-all" style="border-style: inset;
+            border-width: 10px; border-color: rgb(182, 182, 184)">
 
               <!-- Header Row -->
 
@@ -696,12 +704,12 @@
           </div>
         </div>
         <br />
-        <br />
+
 
 
         <!-- Patterns 2 -->
         <div class="w3-margin">
-          <div class="w3-padding w3-asphalt">
+          <div class="w3-padding w3-gray">
             <div class="text-decoration-none">
               <h2> More <a href="./patterns.html" style="text-decoration: none;">Patterns</a>
               </h2>
@@ -791,44 +799,52 @@
 
 
 
-        <!-- Ad for Rit Dye, Add Carousel? -->
-        <br /> 
+        <!-- Ad for Rit Dye carousel -->
+
         <div class="w3-margin">
-          <a href="https://www.ritdye.com/" style="text-decoration: none;" target="_blank">
-            <div class="w3-container w3-padding w3-asphalt">
-              <h2 class="w3-center">Rit Dye,</h2> 
-              <h4 class="w3-italic w3-center">Great for dying yarn</h4>
-            </div>
-          
-            <div class="w3-container w3-asphalt">
-            <div
-              class="w3-display-container w3-section"
-              >
-                <img
-                  src="./images/RIt Ad 1 reworked.jpg"
-                  alt="Advertisement for Rit Dye"
-                  style="width: 100%"
-                />
-            </div>
-          </a>
-        </div>
+        <a href="https://www.ritdye.com/" style="text-decoration: none;" target="_blank" >
+          <div class="w3-container w3-padding-small w3-gray">
+            <h2 class="w3-center">Rit Dye,</h2> 
+            <h3 class="w3-italic w3-center">Great for dying yarn</h3>
+          </div>
+        
+          <div class="w3-container w3-gray w3-padding-16">
+
+            <img class="mySlides2" 
+            src="./images/RIt Ad 2.jpg" style="width: 100%" 
+            />
+
+            <img 
+              class="mySlides2" 
+              src="./images/RIt Ad 3.jpg" 
+              style="width: 100%; display: none" 
+            />
+
+            <img 
+              class="mySlides2" 
+              src="./images/Rit Ad 1 Mockup cropped for website.jpg" 
+              style="width: 100%; display: none" 
+            />
+          </div>
+        </a>
         <br />
 
         <!-- Brochet Magazine Mockups -->        
         <img
-        src="./images/Front and Back Cover 02 (single).jpg"
+        src="./images/Front and Back Cover cropped for website.jpg"
         alt="Mockup of Brochet and Friends Magazine"
         style="width: 100%"/>
-        <div class="w3-container w3-black">
-          <a href="./articles.html" style="text-decoration: none;"><h2 class="w3-center w3-text-deep-purple">Brochet & Friends Magazine</h2></a>
+        <div class="w3-container w3-asphalt">
+          <a href="./articles.html" style="text-decoration: none;"><h3 class="w3-center w3-italic" >Brochet & Friends Magazine</h3></a>
         </div>
         <br />
-        <br />
+
 
         <!-- Shopping side preview with additional content -->
         
         <div class="w3-container w3-padding w3-asphalt">
-          <a href="./shopping.html" style="text-decoration: none;"><h1>Shopping</h1></a>
+          <a href="./shopping.html" style="text-decoration: none;"><h1 class="w3-center w3-text-deep-purple">Shopping</h1></a>
+
         
           <div class="w3-row-padding">
             
@@ -1570,6 +1586,26 @@
       dots[slideIndex - 1].className += " w3-opacity-off";
     }
     // carousel slideshow end
+
+    // RIT carousel slideshow begin
+    var myIndex2 = 0;
+    carousel2();
+    function carousel2() {
+      var i;
+      var x = document.getElementsByClassName("mySlides2");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex2++;
+      if (myIndex2 > x.length) {
+        myIndex2 = 1;
+      }
+      x[myIndex2 - 1].style.display = "block";
+      setTimeout(carousel2, 2000); // Change image every 2 seconds
+    }
+
+
+    // RIT carousel slideshow end
 
     // accordion begin
     function myAccordion(id) {
