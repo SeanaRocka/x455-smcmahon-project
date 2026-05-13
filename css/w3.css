@@ -1756,17 +1756,4 @@ w3-hover-cobalt:hover {
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  }
-  
-.sidebar-top-space {
-  padding-top: 60px;
-}
 
