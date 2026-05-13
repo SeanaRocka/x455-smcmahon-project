@@ -109,6 +109,14 @@
 
       .box, .grid, .grid::after { box-sizing: border-box; }
 
+      .header {
+        position: sticky;
+        top: 0;
+        padding: 10px 16px;
+        background: #555;
+        color: #f1f1f1;
+      }
+
     </style>
     <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
@@ -122,36 +130,40 @@
     <i class="fa fa-bars w3-padding w3-text-deep-purple w3-xlarge"></i>
     </a>
   </div>
-            
-  <nav
-    class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
-    style="display: none"
-    id="mySidebar"
-    >
-    <a
-    href="javascript:void(0)"
-    onclick="w3_close()"
-    class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
 
-    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Home</a
-    >
-    <a href="./articles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Articles</a
-    >
-    <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">About</a
-    >
-    <a href="./shopping.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Shopping</a
-    >
-    <a href="./patterns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Patterns</a
-    >
-    <a href="./community.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Community</a
-    >
-  </nav>
+  <div class="header" id="myHeader">
+  
+        
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left"
+      style="display: none"
+      id="mySidebar"
+      >
+      <a
+      href="javascript:void(0)"
+      onclick="w3_close()"
+      class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
 
-  <a href="#" class="w3-button w3-bar-item w3-right w3-padding w3-text-deep-purple w3-xlarge"><i class="fa fa-search"></i></a>
-      
-  <a href="#" class=" w3-button w3-bar-item w3-right w3-padding w3-text-deep-purple w3-xlarge"
-  ><i class="fa fa-shopping-cart"></i>
-  </a>   
+      <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Home</a
+      >
+      <a href="./articles.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Articles</a
+      >
+      <a href="./about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">About</a
+      >
+      <a href="./shopping.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Shopping</a
+      >
+      <a href="./patterns.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Patterns</a
+      >
+      <a href="./community.html" onclick="w3_close()" class="w3-bar-item w3-button w3-large">Community</a
+      >
+    </nav>
+
+    <a href="#" class="w3-button w3-bar-item w3-right w3-padding w3-text-deep-purple w3-xlarge"><i class="fa fa-search"></i></a>
+        
+    <a href="#" class=" w3-button w3-bar-item w3-right w3-padding w3-text-deep-purple w3-xlarge"
+    ><i class="fa fa-shopping-cart"></i>
+    </a>
+  </div>    
 
 <!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
     
