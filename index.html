@@ -119,28 +119,55 @@
     align-items: center;
   }
 
+  .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
   .sidebar-top-space {
     padding-top: 60px;
   }
 </style>
 
 
-    <meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
+<meta name="description" value="Brochet and Friends is for anyone who loves crochet and yarn">
   </head>
   <body class="w3-light-gray" id="home">
     <!-- 1-The body class gives the whole thing the light gray background-->
+
     <!-- Sticky Navbar -->
-    <div class="navbar">
+  <div class="navbar">
+
+    <!-- Left: Hamburger -->
     <a
-    href="javascript:void(0)"
-    class="w3-bar-item w3-button w3-left w3-light-gray"
-    onclick="w3_open()"
+      href="javascript:void(0)"
+      class="w3-bar-item w3-button w3-light-gray"
+      onclick="w3_open()"
     >
-    <i class="fa fa-bars w3-padding w3-text-deep-purple w3-xlarge"></i>
+      <i class="fa fa-bars w3-padding w3-text-deep-purple w3-xlarge"></i>
+    </a>
 
+    <!-- Right: Icons -->
+    <div class="nav-icons">
 
+      <a
+        href="#"
+        class="w3-button w3-bar-item w3-padding w3-text-deep-purple w3-xlarge"
+      >
+        <i class="fa fa-search"></i>
+      </a>
+
+      <a
+        href="#"
+        class="w3-button w3-bar-item w3-padding w3-text-deep-purple w3-xlarge"
+      >
+        <i class="fa fa-shopping-cart"></i>
+      </a>
+
+    </div>
 
   </div>
+
   
   
   <div> 
