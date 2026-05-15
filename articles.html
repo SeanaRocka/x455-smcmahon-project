@@ -112,6 +112,22 @@
       .sidebar-top-space {
         padding-top: 60px;
       }
+
+      .article-img {
+        max-width: 375px;
+        width: 100%;
+        float: right;
+        padding-left: 20px;
+        height: auto;
+      }
+
+      /* Mobile */
+      @media screen and (max-width: 600px) {
+        .article-img {
+          max-width: 180px;
+          padding-left: 10px;
+        }
+      }
       
 
     </style>
@@ -336,8 +352,9 @@
   
       <!-- 1st article Pietro Henricky -->              
       <p>
-        <img src="./images/pexels-pietro-henricky-1289770821-30723814 (1).jpg"
-        style="max-width: 375px; float: right; padding-left: 20px"
+        <img
+        src="./images/pexels-pietro-henricky-1289770821-30723814 (1).jpg"
+        class="article-img"
         />
         <div id="Henricky"></div>
         <h4>Crochet In Photography</h4>
