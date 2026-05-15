@@ -113,21 +113,24 @@
         padding-top: 60px;
       }
 
-      .article-img {
-        max-width: 375px;
-        width: 100%;
-        float: right;
-        padding-left: 20px;
-        height: auto;
-      }
+.article-img {
+  width: 375px;
+  max-width: 100%;
+  float: right;
+  padding-left: 20px;
+  height: auto;
+}
 
-      /* Mobile */
-      @media screen and (max-width: 600px) {
-        .article-img {
-          max-width: 180px;
-          padding-left: 10px;
-        }
-      }
+@media screen and (max-width: 600px) {
+  .article-img {
+    float: none;
+    display: block;
+    width: 65%;
+    max-width: 160px;
+    margin: 0 auto 15px auto;
+    padding-left: 0;
+  }
+}
       
 
     </style>
