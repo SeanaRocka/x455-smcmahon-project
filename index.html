@@ -109,24 +109,47 @@
 
       .box, .grid, .grid::after { box-sizing: border-box; }
 
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } 
 
-  .nav-icons {
-  display: flex;
-  align-items: center;
+      .nav-icons {
+      display: flex;
+      align-items: center;
+      }
+
+      .sidebar-top-space {
+        padding-top: 60px;
+      }
+
+      .article-img {
+      width: 375px;
+      max-width: 100%;
+      float: right;
+      padding-left: 20px;
+      height: auto;
+    }
+
+@media screen and (max-width: 600px) {
+  .article-img {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 15px auto;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
 }
 
-  .sidebar-top-space {
-    padding-top: 60px;
-  }
 </style>
 
 
@@ -243,7 +266,7 @@
           <!-- 1st article Pietro Henricky -->              
           <p>
             <img src="./images/pexels-pietro-henricky-1289770821-30723814 (1).jpg"
-            style="max-width: 375px; float: right; padding-left: 20px"
+             class="article-img"
             />
 
             <h4>Crochet In Photography</h4>
@@ -265,7 +288,7 @@
 
           <p>
             <img src="./images/tom-daley-knit-featured.jpg"
-            style="max-width: 375px; float: left; padding-right: 20px"
+            class="article-img"
             />
 
             <a href="https://en.wikipedia.org/wiki/Tom_Daley" target="_blank"></a> 
@@ -300,7 +323,7 @@
 
           <p>
             <img src="./images/brochetis-wearing-a-lot-of-crocheted-clothes-a-fashion-sin-v0-h6dcqope28wc1.webp"
-            style="max-width: 375px; float: right; padding-left: 20px"
+            class="article-img"
             />
 
             <h4>Patterns in Review, Fall Themed Suit</h4>
@@ -324,7 +347,7 @@
           <!-- 4th article, Yarn Bombing --> 
           <p>
             <img src="./images/pexels-photo-20068123.png.jpg"
-            style="max-width: 375px; float: right; padding-left: 20px"
+            class="article-img"
             />
             <h4>Crochet in the Wild</h4>
             <h2>Yarn Bombing: Pictures from Around the World</h2>
