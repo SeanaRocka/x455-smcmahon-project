@@ -33,6 +33,24 @@
     <!-- end: add jquery script links to support for sortable table -->
 
     <style>
+      .article-img {
+  width: 375px;
+  max-width: 100%;
+  float: right;
+  padding-left: 20px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .article-img {
+    float: none;
+    display: block;
+    width: 65%;
+    max-width: 130px;
+    margin: 0 auto 15px auto;
+    padding-left: 0;
+  }
+}
       h1,
       h2,
       h3,
@@ -113,24 +131,8 @@
         padding-top: 60px;
       }
 
-.article-img {
-  width: 375px;
-  max-width: 100%;
-  float: right;
-  padding-left: 20px;
-  height: auto;
-}
 
-@media screen and (max-width: 600px) {
-  .article-img {
-    float: none;
-    display: block;
-    width: 65%;
-    max-width: 130px;
-    margin: 0 auto 15px auto;
-    padding-left: 0;
-  }
-}
+
 
       
 
