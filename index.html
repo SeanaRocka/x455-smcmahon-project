@@ -150,41 +150,25 @@
   }
 }
 
-  /* Responsive table wrapper */
-  .table-responsive {
-    width: 100%;
-    overflow-x: auto;
+.pattern-img {
+  width: 120px;
+  height: auto;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+  .pattern-img {
+    width: 70px;
   }
 
-  /* Make table behave better on phones */
-  #myTable {
-    min-width: 700px;
+  #myTable td,
+  #myTable th {
+    padding: 6px;
+    font-size: 12px;
   }
 
-  /* Mobile adjustments */
-  @media screen and (max-width: 600px) {
-
-    #myTable {
-      font-size: 12px;
-    }
-
-    #myTable th,
-    #myTable td {
-      padding: 6px;
-    }
-
-    #myTable img {
-      width: 80px !important;
-    }
-
-    h1 {
-      font-size: 28px;
-    }
-
-    h2 {
-      font-size: 18px;
-    }
-  }
+}
 
 </style>
 
@@ -559,7 +543,7 @@
               <!-- Pink Bird -->
 
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6794.jpg" style="width: 120px" /></td>
+                <td><img src="./images/IMG_6794.jpg" class="pattern-img" /></td>
                 <td><h4>Pink Bird</h4></td>
                 <td><ul>
                   <li>Dark Pink Yarn</li>
@@ -576,7 +560,7 @@
               <!-- Turkey -->
 
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6797.jpg" style="width: 120px" /></td>
+                <td><img src="./images/IMG_6797.jpg" class="pattern-img" /></td>
                 <td><h4>Turkey</h4></td>
                 <td>
                   <ul>
@@ -595,7 +579,7 @@
               <!-- Bunnies -->
               
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6787.jpg" style="width: 120px" /></td>
+                <td><img src="./images/IMG_6787.jpg" class="pattern-img" /></td>
                 <td><h4>Bunnies</h4></td>
                 <td>
                   <ul>
@@ -612,7 +596,7 @@
               <!-- Spiders -->
 
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6803.jpg" style="width: 120px" /></td>
+                <td><img src="./images/IMG_6803.jpg" class="pattern-img" /></td>
                 <td><h4>Spiders</h4></td>
                 <td>
                   <ul>
@@ -628,7 +612,7 @@
               <!-- Chick -->
 
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6799.jpg" style="width: 120px" /></td>
+                <td><img src="./images/IMG_6799.jpg" class="pattern-img" /></td>
                 <td><h4>Chick</h4></td>
                 <td>
                   <ul>
