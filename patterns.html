@@ -267,7 +267,12 @@
               </thead>
               
               <tr class="w3-hover-asphalt">
-                <td><img src="./images/IMG_6794.jpg" style="width: 120px" /></td>
+                <td><img
+                  src="./images/IMG_6794.jpg"
+                  style="width:120px; cursor:pointer"
+                  class="zoomable"
+                  onclick="openModal(this)"
+                /></td>
                 <td><h4>Pink Bird</h4></td>
                 <td><ul>
                   <li>Dark Pink Yarn</li>
@@ -596,6 +601,26 @@
       >Accessibility
     </a>
   </footer>
+
+<!-- Image Zoom Modal -->
+<div
+  id="imgModal"
+  class="w3-modal"
+  onclick="this.style.display='none'"
+>
+  <span
+    class="w3-button w3-xxlarge w3-display-topright w3-text-white"
+  >
+    &times;
+  </span>
+
+  <div class="w3-modal-content w3-animate-zoom w3-transparent">
+    <img
+      id="modalImg"
+      style="width:100%; max-width:900px; display:block; margin:auto"
+    >
+  </div>
+</div>
 
   <script>
 
