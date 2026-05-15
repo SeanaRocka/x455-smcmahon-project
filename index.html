@@ -150,6 +150,42 @@
   }
 }
 
+  /* Responsive table wrapper */
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Make table behave better on phones */
+  #myTable {
+    min-width: 700px;
+  }
+
+  /* Mobile adjustments */
+  @media screen and (max-width: 600px) {
+
+    #myTable {
+      font-size: 12px;
+    }
+
+    #myTable th,
+    #myTable td {
+      padding: 6px;
+    }
+
+    #myTable img {
+      width: 80px !important;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
 </style>
 
 
